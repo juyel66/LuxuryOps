@@ -40,7 +40,13 @@ function StatCard({
         {/* Top-left circular icon */}
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center">
-            <Image src={iconImg} alt="icon" className="w-5 h-5 object-contain" width={20} height={20} />
+            <Image
+              src={iconImg}
+              alt="icon"
+              className="w-5 h-5 object-contain"
+              width={20}
+              height={20}
+            />
           </div>
         </div>
 
@@ -106,8 +112,7 @@ const ICONS = {
   eye: "https://res.cloudinary.com/dqkczdjjs/image/upload/v1765494155/Container_7_dlwyhq.png",
   cursor:
     "https://res.cloudinary.com/dqkczdjjs/image/upload/v1765494155/Container_8_y2rgps.png",
-  ROAS:
-    "https://res.cloudinary.com/dqkczdjjs/image/upload/v1765494155/Container_9_apjmto.png",
+  ROAS: "https://res.cloudinary.com/dqkczdjjs/image/upload/v1765494155/Container_9_apjmto.png",
 };
 
 /* -------------------------
@@ -175,7 +180,9 @@ const AdminDashboard: React.FC = () => {
 
       {/* Quick Actions */}
       <section className="rounded-xl bg-white p-6 shadow-sm">
-        <h2 className="mb-4 text-lg font-semibold text-gray-900">Quick Actions</h2>
+        <h2 className="mb-4 text-lg font-semibold text-gray-900">
+          Quick Actions
+        </h2>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
           <ActionCard
