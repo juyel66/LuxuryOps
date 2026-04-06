@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <AppSidebar />
 
         {/* MAIN CONTENT FIXED */}
-        <main className="flex-1 w-full flex justify-center items-start p-6">
+        <main className="flex-1 w-full flex justify-center items-start p-6 border border-gray-700 bg-black ">
           
           {/* Trigger stays on top-left */}
           <div className="absolute left-4 top-4">
