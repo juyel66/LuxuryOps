@@ -24,7 +24,7 @@ const HomePageHeroSections = () => {
       <div className="absolute inset-0  z-10" />
 
     
-      <div className="container mx-auto relative z-20 h-full flex items-center px-4 sm:px-6 md:px-16">
+      <div className="container mx-auto relative z-20 h-full flex items-center md:px-0 px-4  ">
         <div className="max-w-3xl">
 
          
