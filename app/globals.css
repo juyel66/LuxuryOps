@@ -44,6 +44,9 @@
 }
 
 :root {
+  --Color-text-primary-White: #fff;
+  --Typography-Family-Display: var(--font-cardo), serif;
+  --Typography-Font-Size-7xl: 72px;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -118,5 +121,22 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .font-cardo {
+    font-family: var(--Typography-Family-Display, Cardo), serif;
+    font-weight: 400;
+  }
+
+  .font-cardItalic,
+  .font-carditalic {
+    color: var(--Color-text-primary-White, #fff);
+    font-family: var(--Typography-Family-Display, Cardo), serif;
+    font-size: var(--Typography-Font-Size-7xl, 72px);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 116%;
   }
 }
