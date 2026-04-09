@@ -1,6 +1,5 @@
-// src/app/layout.tsx
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cardo, Montserrat, Geist, Geist_Mono } from "next/font/google";
 // @ts-expect-error -- Next.js handles global CSS side-effect imports
 import "./globals.css";
 
@@ -14,8 +13,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const cardo = Cardo({
+  variable: "--font-cardo",
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
-  title: "AdPortal",
+  title: "LuxuryOps",
   description: "AI Based AdPortal System",
 };
 
@@ -26,7 +37,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`
+          ${geistSans.variable}
+          ${geistMono.variable}
+          ${cardo.variable}
+          ${montserrat.variable}
+          font-body
+          antialiased
+          bg-[#121212]
+          text-white
+          min-h-screen
+        `}
+      >
         {children}
       </body>
     </html>
