@@ -1,19 +1,13 @@
-import { Button } from '@/components/ui/button';
+import HomePageHeroSections from "../Pages/WebsiteComponents/HomePage/HomePageHeroSections";
 
 
-import React from 'react';
-
-import Link from 'next/link';
-
-const page = () => {
+const HomePage = () => {
     return (
         <div>
-            This is Home page <br />
-           <Link  href="/user-dashboard/dashboard"><Button className='bg-red-500'> Go to dashboard</Button></Link>
-          
+            <HomePageHeroSections />
             
         </div>
     );
 };
 
-export default page;
+export default HomePage;
