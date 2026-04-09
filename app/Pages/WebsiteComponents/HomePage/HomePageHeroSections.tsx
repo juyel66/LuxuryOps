@@ -9,7 +9,7 @@ const HomePageHeroSections = () => {
   return (
     <section className=" relative w-full h-[82vh] overflow-hidden  text-white">
 
-      {/* Background Video */}
+      
       <video
         autoPlay
         loop
@@ -20,14 +20,14 @@ const HomePageHeroSections = () => {
         <source src="https://res.cloudinary.com/dqkczdjjs/video/upload/v1775770184/Video_Project_1_qkitjj.mp4" type="video/mp4" />
       </video>
 
-      {/* Overlay */}
+      
       <div className="absolute inset-0  z-10" />
 
-      {/* Content */}
+    
       <div className="container mx-auto relative z-20 h-full flex items-center px-4 sm:px-6 md:px-16">
         <div className="max-w-3xl">
 
-          {/* Top Label */}
+         
           <div className="flex items-center gap-3 mb-2">
             <span className="text-gray-400 md:text-3xl text-2xl">— 01</span>
           </div>
@@ -36,7 +36,7 @@ const HomePageHeroSections = () => {
            — Executive Chauffeur Services
           </span>
 
-          {/* Heading */}
+          
           <h1
             className="font-cardo italic font-normal leading-[116%]
             text-[38px] sm:text-[40px] md:text-[56px] lg:text-[72px]"
@@ -46,7 +46,7 @@ const HomePageHeroSections = () => {
             Services
           </h1>
 
-          {/* Description */}
+          
           <p className="mt-4 md:flex hidden font-cardo sm:mt-6 text-gray-300  text-xl max-w-xl leading-relaxed">
            Experience Barbados with the island's premier chauffeur service, <br /> offering unmatched elegance and excellence.
           </p>
@@ -55,7 +55,7 @@ const HomePageHeroSections = () => {
            Experience Barbados with the island's premier chauffeur service,  offering unmatched elegance and excellence.
           </p>
 
-          {/* Button */}
+         
           <div className="mt-6 sm:mt-8">
             <Link
               href="#"
@@ -68,7 +68,7 @@ const HomePageHeroSections = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      
       <div className="absolute mb-40 inset-0 z-20 hidden md:block pointer-events-none">
         <div className="container mx-auto  flex h-full items-end justify-end px-4 sm:px-6 md:px-16 pb-10">
           <div className="flex flex-col items-center">
