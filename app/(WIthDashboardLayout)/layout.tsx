@@ -16,7 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <SidebarTrigger />
           </div>
 
-          {/* Centered content wrapper */}
+         
           <div className="w-full ">
             {children}
           </div>
