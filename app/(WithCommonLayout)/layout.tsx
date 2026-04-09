@@ -1,11 +1,15 @@
+import Footer from "../Pages/CommonPages/Footer";
+import Navbar from "../Pages/CommonPages/Navbar";
 
 
 const DashboardLayout = ({children}: {children: React.ReactNode}) => {
     return (
         <div>
-            <h1>This is navbar</h1>
-            {children}
-            <h1>This is footer</h1>
+            <Navbar />
+            <div className="min-h-screen bg-[#121212]  md:pt-22 ">
+                {children}
+            </div>
+            <Footer />
             
         </div>
     );
