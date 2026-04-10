@@ -39,7 +39,7 @@ const VVIPLuxuryService = () => {
             <span className="text-gray-400 md:text-3xl text-2xl">— 02</span>
           </div>
 
-        <h2 className="font-display italic text-[32px] sm:text-[42px] md:text-[56px] leading-[116%] mb-6">
+        <h2 className="font-cardo italic text-[32px] sm:text-[42px] md:text-[56px] leading-[116%] mb-6">
           VVIP Luxury <br />
           Services
         </h2>
