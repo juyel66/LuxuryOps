@@ -59,7 +59,7 @@ const HomePageHeroSections = () => {
           <div className="mt-6 sm:mt-8">
             <Link
               href="#"
-              className="inline-flex items-center  gap-3 border bg-white/10 border-white/40 px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm transition-all duration-300 hover:bg-[#D4AF37] "
+              className="inline-flex items-center  gap-3 border bg-white/10 border-white px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm transition-all duration-300 hover:bg-[#D4AF37] "
             >
               DISCOVER <Image src={rightArrow} alt="arrow" className="w-4 h-4" />
             </Link>
