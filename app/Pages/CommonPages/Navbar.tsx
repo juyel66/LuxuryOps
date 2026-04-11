@@ -10,7 +10,7 @@ import instagram from "../../../public/images/instagram.svg";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "About VVIP", href: "/about" },
+  { label: "About VVIP", href: "/aboutvvip" },
   { label: "Our Fleet", href: "/fleet" },
   { label: "Services", href: "/services" },
   { label: "Concierge", href: "/concierge" },
@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <header className="w-full lg:fixed lg:top-0 lg:left-0 z-50 flex justify-center py-2 lg:py-4 px-3 sm:px-4 lg:px-0 bg-[#121212] lg:bg-transparent transition-all duration-300">
-      <div className="w-full container mx-auto">
+      <div className="container w-full mx-auto">
 
         {/* NAVBAR */}
         <nav className="flex items-center justify-between border border-white/15 bg-black px-4 py-2.5 lg:rounded-full lg:border-transparent lg:bg-[#111] lg:px-6 lg:py-3 transition-all duration-300 shadow-sm lg:shadow-none text-white">
@@ -47,7 +47,7 @@ const Navbar = () => {
           </Link>
 
           {/* DESKTOP MENU */}
-          <ul className="hidden lg:flex items-center gap-8 text-white">
+          <ul className="items-center hidden gap-8 text-white lg:flex">
             {navItems.map((item) => (
               <li key={item.label}>
                 <Link
@@ -70,15 +70,15 @@ const Navbar = () => {
           </ul>
 
           {/* RIGHT SIDE */}
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="items-center hidden gap-6 lg:flex">
             <Link
               href="/contact"
-              className="bg-yellow-500 text-white flex items-center px-5 py-3 rounded-md font-semibold hover:bg-yellow-400 transition"
+              className="flex items-center px-5 py-3 font-semibold text-white transition bg-yellow-500 rounded-md hover:bg-yellow-400"
             >
               BOOK NOW <Image src={rightArrow} alt="arrow" className="w-5 h-5 ml-2" />
             </Link>
 
-            <div className="flex items-center gap-4 text-white text-sm">
+            <div className="flex items-center gap-4 text-sm text-white">
               <Image
                 src={instagram}
                 alt="Instagram"
@@ -86,7 +86,7 @@ const Navbar = () => {
               />
               <Link
                 href="/user-dashboard/overview"
-                className="opacity-70 hover:opacity-100 transition"
+                className="transition opacity-70 hover:opacity-100"
               >
                 DASHBOARD
               </Link>
@@ -96,7 +96,7 @@ const Navbar = () => {
           {/* MOBILE MENU BUTTON */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden flex h-9 w-9 items-center justify-center border border-white/30 text-white transition hover:opacity-90"
+            className="flex items-center justify-center text-white transition border lg:hidden h-9 w-9 border-white/30 hover:opacity-90"
             aria-label="Toggle navigation menu"
             aria-expanded={isMenuOpen}
           >
@@ -118,7 +118,7 @@ const Navbar = () => {
               : "max-h-0 opacity-0 pointer-events-none"
           }`}
         >
-          <div className="border border-white/15 bg-black p-4 shadow-md text-white">
+          <div className="p-4 text-white bg-black border shadow-md border-white/15">
             <ul className="flex flex-col gap-3">
               {navItems.map((item) => (
                 <li key={item.label}>
