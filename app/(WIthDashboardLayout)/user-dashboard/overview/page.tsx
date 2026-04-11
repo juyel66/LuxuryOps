@@ -2,7 +2,7 @@ import React from 'react';
 
 const page = () => {
   return (
-    <div className="text-white">
+    <div className="container mx-auto text-white ">
       This is over view page 
       
     </div>
