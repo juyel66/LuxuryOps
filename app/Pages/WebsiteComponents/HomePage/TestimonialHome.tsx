@@ -12,7 +12,7 @@ export default function TestimonialHome() {
       <div className="container relative z-10 mx-auto">
         
         {/* HEADER */}
-        <div className="mb-16 max-w-[700px]">
+        <div className="container mb-16">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-10 h-px bg-[#7A8A9A]" />
             <span className="text-2xl text-gray-400 md:text-3xl">05</span>
