@@ -18,6 +18,7 @@ import img8 from "../../../../public/images/service2.svg";
 
 type Service = {
   id: number;
+  slug: string;
   title: string;
   category: string;
   image: any;
@@ -28,6 +29,7 @@ type Service = {
 const servicesData: Service[] = [
      {
     id: 1,
+    slug: "diplomatic-services",
     title: "Diplomatic Services",
     category: "Transport",
     image: img1,
@@ -43,6 +45,7 @@ const servicesData: Service[] = [
   },
   {
     id: 2,
+    slug: "weddings",
     title: "Weddings",
     category: "Transport",
     image: img2,
@@ -58,6 +61,7 @@ const servicesData: Service[] = [
   },
   {
     id: 3,
+    slug: "sightseeing-tours",
     title: "Sightseeing Tours",
     category: "Transport",
     image: img3,
@@ -73,6 +77,7 @@ const servicesData: Service[] = [
   },
   {
     id: 4,
+    slug: "photo-shoots",
     title: "Photo Shoots",
     category: "Transport",
     image: img4,
@@ -88,6 +93,7 @@ const servicesData: Service[] = [
   },
   {
     id: 5,
+    slug: "corporate-events",
     title: "Corporate Events",
     category: "Transport",
     image: img5,
@@ -103,6 +109,7 @@ const servicesData: Service[] = [
   },
   {
     id: 6,
+    slug: "special-events",
     title: "Special Events",
     category: "Transport",
     image: img6,
@@ -118,6 +125,7 @@ const servicesData: Service[] = [
   },
   {
     id: 7,
+    slug: "tailor-made-services",
     title: "Tailor Made Services",
     category: "Transport",
     image: img7,
@@ -133,6 +141,7 @@ const servicesData: Service[] = [
   },
   {
     id: 8,
+    slug: "airport-transfers",
     title: "Airport Transfers",
     category: "Transport",
     image: img8,
@@ -148,6 +157,7 @@ const servicesData: Service[] = [
   },
   {
     id: 9,
+    slug: "bespoke-private-chauffeuring",
     title: "Bespoke Private Chauffeuring",
     category: "Transport",
     image: img8,
@@ -163,6 +173,7 @@ const servicesData: Service[] = [
   },
   {
     id: 10,
+    slug: "group-transportation",
     title: "Group Transportation",
     category: "Transport",
     image: img8,
@@ -240,7 +251,7 @@ export default function ServiceCard() {
               <div className="flex flex-wrap gap-4">
                 
                 <Link
-                  href="#"
+                  href={`/services/${service.slug}`}
                   className="group inline-flex items-center gap-3 border border-[#D4AF37] px-5 py-2 text-xs tracking-wider uppercase text-[#D4AF37] transition-all duration-300 hover:bg-[#D4AF37] hover:text-white"
                 >
                   Details View
