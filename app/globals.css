@@ -125,6 +125,15 @@
 }
 
 @layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
   .font-cardo {
     font-family: var(--Typography-Family-Display, Cardo), serif;
     font-weight: 400;
