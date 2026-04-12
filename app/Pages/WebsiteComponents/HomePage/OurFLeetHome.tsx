@@ -66,7 +66,7 @@ export default function OurFleetHome() {
 
               <div className="flex items-center gap-2">
                 <Image src={chekckBox} alt="feature" className="w-4 h-4" />
-                <span>4 People</span>
+                <span>4 Passengers</span>
               </div>
 
               <div className="flex items-center gap-2">
