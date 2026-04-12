@@ -16,9 +16,9 @@ const Footer = () => {
         <div className="flex justify-center mb-8 md:mb-10 mt-14 md:mt-20">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="flex items-center justify-center mb-20 text-xl text-gray-400 transition cursor-pointer font-cardo md:mb-40 hover:text-white"
+            className="flex items-center justify-center mb-20 text-gray-400 transition cursor-pointer md:text-xl font-cardo md:mb-40 hover:text-white"
           >
-            <Image src={arrowUp} alt="Back to top" className="w-5 h-5" /> Back to top
+            <Image src={arrowUp} alt="Back to top" className="md:h-5 md:w-5 " /> Back to top
           </button>
         </div>
 
