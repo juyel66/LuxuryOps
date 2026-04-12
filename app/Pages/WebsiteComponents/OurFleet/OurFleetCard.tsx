@@ -82,7 +82,7 @@ export default function OurFleetCard() {
     <div>
 
         <div className="container px-3 mx-auto ">
-            <h1 className="text-2xl md:text-4xl font-cardo">A Vanguard Collection: A Symphony <br /> of Opulent Travel</h1>
+            <h1 className="text-2xl md:text-4xl font-cardo">Our Vanguard Collection: A Symphony <br /> Of Opulent Travel</h1>
             <p className="mt-5 text-[#9CA3AF] font-cardo">Step into our world where travel is transformed into a bespoke sanctuary of refinement. Our curated fleet represents the absolute pinnacle of automotive excellence, meticulously selected to provide an atmosphere of unrivaled prestige and serenity. Each vehicle in our collection serves as a rolling testament to sophisticated engineering and artisanal craftsmanship, designed specifically for those who demand the extraordinary as their standard. From the whisper-quiet cabins of our flagship sedans to the expansive, custom-appointed interiors of our luxury suites on wheels, we invite you to experience an art of the journey, redefined. Explore the embodiments of grace, power, and discretion that await.</p>
         </div>
         <section className="px-6 py-24 text-white bg-black sm:px-10 lg:px-20">
