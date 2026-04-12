@@ -11,7 +11,7 @@ import instagram from "../../../public/images/instagram.svg";
 const navItems = [
   { label: "Home", href: "/" },
   { label: "About VVIP", href: "/aboutvvip" },
-  { label: "Our Fleet", href: "/fleet" },
+  { label: "Our Fleet", href: "/our-fleet" },
   { label: "Services", href: "/services" },
   { label: "Concierge", href: "/concierge" },
   { label: "Security", href: "/security" },
