@@ -34,7 +34,7 @@ export default function OurValues() {
 
           <div>
             <h3 className="text-[#D4AF37] text-2xl sm:text-3xl font-semibold">
-              3.3M
+              5.3M
             </h3>
             <p className="text-[#9CA3AF] text-xs sm:text-sm mt-2">
               Kilometres Driven
