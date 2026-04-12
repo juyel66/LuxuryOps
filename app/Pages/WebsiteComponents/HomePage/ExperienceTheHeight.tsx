@@ -62,7 +62,7 @@ export default function ExperienceTheHeight() {
               </div>
 
               <div className="w-full px-8 border rounded min-w-56 border-white/15 bg-black/25 py-7 backdrop-blur-sm">
-                <h3 className="mb-2 text-[52px] font-cardo italic leading-none text-[#D4AF37]">50+</h3>
+                <h3 className="mb-2 text-[52px] font-cardo italic leading-none text-[#D4AF37]">15+</h3>
                 <p className="text-xs uppercase tracking-wide text-[#B5BBC2]">Premium Vehicles</p>
               </div>
 
