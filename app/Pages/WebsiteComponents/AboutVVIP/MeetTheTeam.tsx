@@ -40,7 +40,7 @@ const teamData: TeamMember[] = [
     name: "Ryan",
     role: "Luxury Chauffeur",
     image: img3,
-    desc: `"I am dedicated to providing an exceptional level of service that goes beyond transportation. My goal is to create memorable experiences for every client, ensuring that each journey is not just a ride, but a luxurious and personalized experience."`,
+    desc: `"I am dedicated to providing an exceptional level of service that goes beyond transportation. My goal is to create memorable experiences for every client, ensuring that each journey is not just a ride, but a luxurious and personalized experience ."`,
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const teamData: TeamMember[] = [
 
 const TeamCard = ({ member }: { member: TeamMember }) => {
   return (
-    <div className="flex  flex-col justify-between rounded-xl border border-[#172238] bg-[#0A0C12] p-6 text-center shadow-[0_0_0_1px_rgba(12,24,52,0.25)]">
+    <div className="flex font-cardo h-[450px] flex-col rounded-xl border border-[#172238] bg-[#0A0C12] p-6 text-center shadow-[0_0_0_1px_rgba(12,24,52,0.25)]">
       
       {/* IMAGE */}
       <div className="relative mx-auto mb-5 overflow-hidden border rounded-full h-36 w-36 border-white/10">
@@ -61,12 +61,12 @@ const TeamCard = ({ member }: { member: TeamMember }) => {
           src={member.image}
           alt={member.name}
           fill
-          className="object-cover"
+          className="object-cover rounded-full"
         />
       </div>
 
       {/* NAME */}
-      <h3 className="mb-4 font-cardo text-[42px] leading-none text-[#F4F4F6]">{member.name}</h3>
+      <h3 className="mb-4 font-cardo text-[32px] leading-none text-[#F4F4F6]">{member.name}</h3>
 
       {/* ROLE */}
       <div className="mx-auto mb-5 inline-flex min-w-[145px] justify-center rounded-full bg-[#806100] px-5 py-2 text-base leading-none text-[#F5E8BF]">
@@ -74,7 +74,15 @@ const TeamCard = ({ member }: { member: TeamMember }) => {
       </div>
 
       {/* DESC */}
-      <p className="text-sm leading-[1.7] text-[#8D96A7]">
+      <p
+        className="text-sm leading-[1.7] text-[#8D96A7]"
+        style={{
+          display: "-webkit-box",
+          WebkitLineClamp: 6,
+          WebkitBoxOrient: "vertical",
+          overflow: "hidden",
+        }}
+      >
         {member.desc}
       </p>
     </div>
@@ -84,7 +92,7 @@ const TeamCard = ({ member }: { member: TeamMember }) => {
 export default function TeamSlider() {
   return (
     <section className="px-6 py-24 text-white bg-black sm:px-10 lg:px-20">
-      <div className="max-w-[1400px] mx-auto">
+      <div className="container mx-auto">
         
         {/* HEADER */}
         <div className="mb-16 max-w-[700px]">
