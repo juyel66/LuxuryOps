@@ -15,21 +15,21 @@ const HomePageHeroSections = () => {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 object-cover w-full h-full"
       >
         <source src="https://res.cloudinary.com/dqkczdjjs/video/upload/v1775770184/Video_Project_1_qkitjj.mp4" type="video/mp4" />
       </video>
 
       
-      <div className="absolute inset-0  z-10" />
+      <div className="absolute inset-0 z-10" />
 
     
-      <div className="container mx-auto relative z-20 h-full flex items-center md:px-0 px-4  ">
+      <div className="container relative z-20 flex items-center h-full px-4 mx-auto md:px-0 ">
         <div className="max-w-3xl">
 
          
           <div className="flex items-center gap-3 mb-2">
-            <span className="text-gray-400 md:text-3xl text-2xl">— 01</span>
+            <span className="text-2xl text-gray-400 md:text-3xl">— 01</span>
           </div>
 
           <span className="text-yellow-500  md:text-[18px] text-[17px]  tracking-widest uppercase block mb-4">
@@ -47,11 +47,11 @@ const HomePageHeroSections = () => {
           </h1>
 
           
-          <p className="mt-4 md:flex hidden font-cardo sm:mt-6 text-gray-300  text-xl max-w-xl leading-relaxed">
+          <p className="hidden max-w-xl mt-4 text-xl leading-relaxed text-gray-300 md:flex font-cardo sm:mt-6">
            Experience Barbados with the island's premier chauffeur service, <br /> offering unmatched elegance and excellence.
           </p>
 
-          <p className="flex md:hidden mt-4 font-cardo sm:mt-6 text-gray-300 text-xl sm:text-base max-w-xl leading-relaxed">
+          <p className="flex max-w-xl mt-4 text-xl leading-relaxed text-gray-300 md:hidden font-cardo sm:mt-6 sm:text-base">
            Experience Barbados with the island's premier chauffeur service,  offering unmatched elegance and excellence.
           </p>
 
@@ -69,13 +69,13 @@ const HomePageHeroSections = () => {
       </div>
 
       
-      <div className="absolute mb-40 inset-0 z-20 hidden md:block pointer-events-none">
-        <div className="container mx-auto  flex h-full items-end justify-end px-4 sm:px-6 md:px-16 pb-10">
+      <div className="absolute inset-0 z-20 hidden mb-40 pointer-events-none md:block">
+        <div className="container flex items-end justify-end h-full px-4 pb-10 mx-auto sm:px-6 md:px-16">
           <div className="flex flex-col items-center">
             <span className="rotate-90 text-[10px] sm:text-xs tracking-widest text-gray-300 mb-4">
               Scroll
             </span>
-            <div className="w-px h-12 sm:h-16 bg-gray-400" />
+            <div className="w-px h-12 bg-gray-400 sm:h-16" />
           </div>
         </div>
       </div>
