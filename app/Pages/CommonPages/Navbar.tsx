@@ -72,7 +72,7 @@ const Navbar = () => {
           {/* RIGHT SIDE */}
           <div className="items-center hidden gap-6 lg:flex">
             <Link
-              href="/contact"
+              href="/book-now"
               className="flex items-center px-5 py-3 font-semibold text-white transition bg-yellow-500 rounded-md hover:bg-yellow-400"
             >
               BOOK NOW <Image src={rightArrow} alt="arrow" className="w-5 h-5 ml-2" />
@@ -137,7 +137,7 @@ const Navbar = () => {
               ))}
 
               <Link
-                href="/contact"
+                href="/book-now"
                 onClick={() => setIsMenuOpen(false)}
                 className="mt-2  justify-center bg-yellow-500 text-white flex items-center px-5 py-2.5 font-medium"
               >
