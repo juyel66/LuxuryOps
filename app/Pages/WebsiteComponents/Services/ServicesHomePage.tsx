@@ -16,14 +16,14 @@ export default function ServicesHomePage() {
       />
 
       {/* DARK OVERLAY */}
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-black/20" />
 
       {/* CONTENT */}
       <div className="relative z-10 flex items-center h-full px-6 sm:px-10 lg:px-20">
         <div className="container flex items-center justify-between w-full mx-auto">
    
           <div className="container mx-auto">
-            <p className="text-lg font-bold text-gray-700">
+            <p className="mb-4 text-lg font-bold text-gray-700">
               — FIND OUT MORE
             </p>
             <h2 className="text-[32px] sm:text-[42px] lg:text-[56px] leading-[1.2] font-cardo italic mb-6">
