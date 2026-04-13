@@ -4,7 +4,7 @@ import Image from "next/image";
 
 // 👉 replace with your real image
 import leftImage from "../../../../public/images/ImageWithFallback (4).svg";
-import divider from "../../../../public/images/Container (17).svg";
+// import divider from "../../../../public/images/Container (17).svg";
 import dividerMobile from "../../../../public/images/Container (23).svg";
 
 export default function ArmedUnarmed() {
