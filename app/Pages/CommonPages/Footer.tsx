@@ -49,17 +49,18 @@ const Footer = () => {
             <Link href="/fleet">Our Fleet</Link>
             <Link href="/services">Services</Link>
             <Link href="/contact">Contact</Link>
+            <Link href="/terms-and-conditions">Terms & Conditions</Link>
           </div>
 
           {/* RIGHT */}
-          <div className="flex items-center justify-center w-full gap-2 md:flex-1 md:justify-end">
+          <Link href="/privacy-policy" className="flex items-center justify-center w-full gap-2 mb-4 md:flex-1 md:justify-end">
             <span className="text-base">
               <Image src={instagram} alt="Instagram" className="w-5 h-5" />
             </span>
-            <Link href="/privacy" className="transition hover:text-white">
+            <div  className="transition hover:text-white">
               Privacy Policy
-            </Link>
-          </div>
+            </div>
+          </Link>
 
         </div>
 
