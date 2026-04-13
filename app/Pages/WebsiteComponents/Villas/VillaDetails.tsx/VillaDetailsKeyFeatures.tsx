@@ -29,7 +29,7 @@ export default function VillaDetailsKeyFeatures() {
           </div>
 
           {/* TITLE */}
-          <h1 className="font-serif text-3xl leading-tight md:text-5xl">
+          <h1 className="text-3xl leading-tight font-cardo md:text-5xl">
             Royal Westmoreland Estate
           </h1>
 
@@ -87,7 +87,7 @@ export default function VillaDetailsKeyFeatures() {
 
           {/* FEATURES */}
           <div>
-            <h2 className="mb-5 font-serif text-xl">Key Features</h2>
+            <h2 className="mb-5 text-xl font-cardo">Key Features</h2>
 
             <div className="grid grid-cols-1 text-sm text-gray-400 sm:grid-cols-2 gap-y-3 gap-x-10">
               {[
@@ -108,7 +108,7 @@ export default function VillaDetailsKeyFeatures() {
 
           {/* AMENITIES */}
           <div>
-            <h2 className="mb-5 font-serif text-xl">Amenities</h2>
+            <h2 className="mb-5 text-xl font-cardo">Amenities</h2>
 
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
               {[
@@ -138,7 +138,7 @@ export default function VillaDetailsKeyFeatures() {
           <div className="relative rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 via-white/0 to-white/5 backdrop-blur-xl p-6 space-y-6 shadow-[0_0_40px_rgba(0,0,0,0.8)]">
             <div>
               <p className="text-sm text-gray-400">From</p>
-              <h2 className="font-serif text-4xl">
+              <h2 className="text-4xl font-cardo">
                 $12,500 <span className="text-sm text-gray-400">/Night</span>
               </h2>
             </div>
