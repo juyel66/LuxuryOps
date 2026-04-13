@@ -8,13 +8,23 @@ export default function AboutVVIPHome() {
     <section className="relative w-full md:h-[70vh] h-[400px] md:min-h-[600px] text-white overflow-hidden">
       
       {/* BACKGROUND IMAGE */}
-      <Image
+      {/* <Image
         src={bgImage}
         alt="VVIP Luxury Car"
         fill
         priority
         className="object-cover object-center"
-      />
+      /> */}
+
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 object-cover w-full h-full"
+      >
+        <source src="https://res.cloudinary.com/dqkczdjjs/video/upload/v1775770184/Video_Project_1_qkitjj.mp4" type="video/mp4" />
+      </video>
 
       {/* DARK OVERLAY */}
       <div className="absolute inset-0 bg-black/20" />
