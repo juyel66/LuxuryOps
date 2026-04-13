@@ -49,7 +49,7 @@ export default function FeaturedAccommodation() {
             </p>
           </div>
 
-          {/* BUTTON */}
+        
           <Link
             href="#"
             className="flex items-center gap-2 px-6 py-3 text-sm tracking-wide transition border border-white/30 hover:bg-white hover:text-black"
