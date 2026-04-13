@@ -15,6 +15,8 @@ import cheif from "../../../../../public/images/Icon (39).svg";
 import security from "../../../../../public/images/Icon (40).svg";
 import pool from "../../../../../public/images/Icon (41).svg";
 import parking from "../../../../../public/images/Icon (42).svg";
+// import numberCounticonDynamic from "../../../../public/images/Component 3 (5).svg";
+// import calendarIcon from "../../../../public/images/Component 3 (4).svg";
 
 export default function VillaDetailsKeyFeatures() {
   return (
