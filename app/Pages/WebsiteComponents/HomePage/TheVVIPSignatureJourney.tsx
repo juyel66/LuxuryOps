@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import img1 from "../../../../public/images/Container (5).svg"; 
+import img1 from "../../../../public/images/Container (36).svg"; 
 
 export default function TheVVIPSignatureJourney() {
   return (
