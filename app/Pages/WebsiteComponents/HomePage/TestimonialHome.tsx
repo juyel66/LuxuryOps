@@ -103,7 +103,7 @@ export default function TestimonialHome() {
   return (
     <section className="relative block w-full px-4 py-16 text-white bg-black font sm:px-10 md:py-24 lg:px-20 font-cardo">
       {/* BACKGROUND GLOW (like design) */}
-      <div className="absolute top-0 left-1/2 w-80 h-80 -translate-x-1/2 bg-linear-to-br from-yellow-500/20 via-green-400/10 to-blue-500/20 blur-3xl opacity-30 pointer-events-none sm:left-1/3 sm:w-96 sm:h-96 sm:translate-x-0" />
+      <div className="absolute top-0 -translate-x-1/2 pointer-events-none left-1/2 w-80 h-80 bg-linear-to-br from-yellow-500/20 via-green-400/10 to-blue-500/20 blur-3xl opacity-30 sm:left-1/3 sm:w-96 sm:h-96 sm:translate-x-0" />
 
       <div className="container relative z-10 mx-auto">
         {/* HEADER */}
