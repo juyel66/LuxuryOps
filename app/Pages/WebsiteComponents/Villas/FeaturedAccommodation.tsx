@@ -14,22 +14,42 @@ import guestIcon from "../../../../public/images/Icon (26).svg";
 import bedIcon from "../../../../public/images/Icon (27).svg";
 import bathIcon from "../../../../public/images/Icon (28).svg";
 import poolIcon from "../../../../public/images/pool.svg";
+import rightArrow from "../../../../public/images/Component 3 copy.svg";
 
 const properties = [
-  {
+  { 
+    slug: "royal-westmoreland-estate",
     image: img1,
     title: "Royal Westmoreland Estate",
     location: "St. James, Platinum Coast",
     price: "$12,500",
     rating: 5,
   },
-  {
+  { 
+    slug: "sandy-lane-private-villa",
     image: img2,
-    title: "Royal Westmoreland Estate",
+    title: "Sandy Lane Private Villa",
     location: "St. James, Platinum Coast",
     price: "$12,500",
     rating: 5,
   },
+    {
+      slug: "palm-grove-estate",
+    image: img1,
+    title: "Palm Grove Estate",
+    location: "Holetown, Barbados",
+    price: "$11,300",
+    rating: 4,
+  },
+  {
+    slug: "crystal-waters-residence",
+    image: img2,
+    title: "Crystal Waters Residence",
+    location: "Speightstown, Barbados",
+    price: "$13,900",
+    rating: 5,
+  },
+
 ];
 
 export default function FeaturedAccommodation() {
@@ -50,10 +70,10 @@ export default function FeaturedAccommodation() {
 
         
           <Link
-            href="#"
-            className="flex items-center gap-2 px-6 py-3 text-sm tracking-wide transition border border-white/30 hover:bg-white hover:text-black"
+            href="/villas/all-villas"
+            className="flex items-center gap-2 px-6 py-3 text-sm tracking-wide transition border border-white/30 hover:bg-yellow-500 hover:text-white"
           >
-            BOOK YOUR ACCOMMODATION →
+            BOOK YOUR ACCOMMODATION <Image src={rightArrow} alt="star" className="w-4 h-4" />
           </Link>
         </div>
 
@@ -61,9 +81,9 @@ export default function FeaturedAccommodation() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           
           {properties.map((item, index) => (
-            <div
+            <Link href="/villas/[slug]" as={`/villas/${item.slug}`}
               key={index}
-              className="rounded-2xl overflow-hidden border border-white/10 bg-[#0B0B0B]"
+              className="rounded-2xl hover:border-2 hover:border-gray-600 overflow-hidden border border-white/10 bg-[#0B0B0B]"
             >
               
               {/* IMAGE */}
@@ -100,8 +120,8 @@ export default function FeaturedAccommodation() {
               <div className="p-6">
                 
                 {/* LOCATION */}
-                <div className="flex items-center gap-2 mb-3 text-xs text-gray-400">
-                  <Image src={locationIcon} alt="" width={16} height={16} />
+                <div className="flex items-center gap-2 mb-3 text-gray-400">
+                  <Image src={locationIcon} alt="" width={18} height={18} />
                   {item.location}
                 </div>
 
@@ -116,7 +136,7 @@ export default function FeaturedAccommodation() {
                 </p>
 
                 {/* AMENITIES */}
-                <div className="flex flex-wrap items-center gap-5 pt-4 text-xs text-gray-200 border-t border-white/10">
+                <div className="flex flex-wrap items-center gap-5 pt-4 text-gray-200 border-t border-white/10">
                   
                   <div className="flex items-center gap-2">
                     <Image src={guestIcon} alt="" width={18} height={18} />
@@ -141,7 +161,7 @@ export default function FeaturedAccommodation() {
                 </div>
 
               </div>
-            </div>
+            </Link>
           ))}
 
         </div>
