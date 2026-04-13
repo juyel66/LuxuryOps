@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
-import bgImage from "../../../../public/images/image 2 (2).svg"
+// import Image from "next/image";
+// import bgImage from "../../../../public/images/image 2 (2).svg"
 
 export default function AboutVVIPHome() {
   return (
