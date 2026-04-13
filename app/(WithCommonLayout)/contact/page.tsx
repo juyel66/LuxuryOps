@@ -1,9 +1,12 @@
+import ContactHeroSection from "@/app/Pages/WebsiteComponents/Contact/ContactHeroSection";
+import MakeEnquiryContact from "@/app/Pages/WebsiteComponents/Contact/MakeEnquiryContact";
 
 
 const page = () => {
     return (
         <div>
-            This is contact page 
+            <ContactHeroSection />
+            <MakeEnquiryContact />
             
         </div>
     );
