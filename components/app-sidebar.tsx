@@ -1,12 +1,32 @@
 "use client";
 
 import Link from "next/link";
-import dashboardLogo from '../public/images/dashboardLogo.svg';
+import dashboardLogo from "../public/images/dashboardLogo.svg";
 import { usePathname } from "next/navigation";
+import { useMemo, useState } from "react";
+import type { ComponentType, CSSProperties } from "react";
 import {
   Home,
-
+  Calendar,
+  ClipboardList,
+  Building2,
+  Landmark,
+  Car,
+  Users,
+  User,
+  Truck,
+  Shield,
+  FileText,
+  DollarSign,
+  BarChart3,
+  CreditCard,
+  Folder,
+  Globe,
+  Activity,
+  Settings,
   LogOut,
+  ArrowLeft,
+  ChevronDown,
 } from "lucide-react";
 
 import {
@@ -21,21 +41,77 @@ import {
 } from "@/components/ui/sidebar";
 import Image from "next/image";
 
+type SidebarLink = {
+  title: string;
+  icon?: ComponentType<{ className?: string; style?: CSSProperties }>;
+  url?: string;
+};
 
-const userItems = [
+type SidebarItem =
+  | { section: string }
+  | { type: "divider" }
+  | (SidebarLink & { children?: SidebarLink[] });
+
+const adminItems: SidebarItem[] = [
+  { section: "MAIN" },
+  { title: "Overview", icon: Home, url: "/admin-dashboard/overview" },
+  { title: "Bookings", icon: Calendar, url: "/admin-dashboard/bookings" },
+  { title: "Daily Jobs", icon: ClipboardList, url: "/admin-dashboard/daily-jobs" },
+  { title: "Hotels", icon: Building2, url: "/admin-dashboard/hotels" },
+  { title: "Entities", icon: Landmark, url: "/admin-dashboard/entities" },
+  { title: "Fleet", icon: Car, url: "/admin-dashboard/fleet" },
   {
-    title: "Overview",
-    url: "/user-dashboard/overview",
-    icon: Home,
+    title: "People",
+    icon: Users,
+    children: [
+      { title: "User Management", icon: User, url: "/admin-dashboard/users" },
+      { title: "Drivers", icon: Truck, url: "/admin-dashboard/drivers" },
+      { title: "Team", icon: Shield, url: "/admin-dashboard/team" },
+    ],
   },
-
+  {
+    title: "Customers",
+    icon: Folder,
+    children: [
+      { title: "Villa Enquiries", url: "/admin-dashboard/villa-enquiries" },
+      { title: "Contact Submissions", url: "/admin-dashboard/contact-submissions" },
+      { title: "Login History", url: "/admin-dashboard/login-history" },
+    ],
+  },
+  { section: "FINANCE" },
+  { title: "Invoices", icon: FileText, url: "/admin-dashboard/invoices" },
+  { title: "Accounting", icon: DollarSign, url: "/admin-dashboard/accounting" },
+  {
+    title: "Summary",
+    icon: BarChart3,
+    children: [{ title: "Financial Summary", url: "/admin-dashboard/financial-summary" },
+      { title: "Driver Summary", url: "/admin-dashboard/Driver-summary" }
+    ],
+  },
+  { title: "Payroll", icon: CreditCard, url: "/admin-dashboard/payroll" },
+  { section: "SYSTEM" },
+  {
+    title: "Website",
+    icon: Globe,
+    children: [
+      { title: "Villas", url: "/admin-dashboard/website/villas" },
+      { title: "Service", url: "/admin-dashboard/website/service" },
+      { title: "Testimonial", url: "/admin-dashboard/website/testimonial" },
+      { title: "User Review", url: "/admin-dashboard/website/user-review" },
+    ],
+  },
+  { title: "Analytics", icon: Activity, url: "/admin-dashboard/analytics" },
+  { title: "Settings", icon: Settings, url: "/admin-dashboard/settings" },
+  { type: "divider" },
+  { title: "Logout", icon: LogOut, url: "/logout" },
+  { title: "Back to Website", icon: ArrowLeft, url: "/" },
 ];
 
 
-const adminItems = [
+const userItems = [
   {
     title: "Dashboard",
-    url: "/admin-dashboard/dashboard",
+    url: "/user-dashboard/dashboard",
     icon: Home,
   },
   
@@ -43,18 +119,51 @@ const adminItems = [
 
 
 const ACTIVE_BG = "#CC990029";
-const INACTIVE_TEXT = "#4B5563"; 
-const INACTIVE_ICON = "#6B7280"; 
+const INACTIVE_TEXT = "#E5E7EB"; 
+const INACTIVE_ICON = "#C7CBD6"; 
 
 
 
 export function AppSidebar({ isAdmin = false }: { isAdmin?: boolean }) {
   const pathname = usePathname();
-  const items = isAdmin ? adminItems : userItems;
+  const items = isAdmin ? userItems : adminItems;
+  const defaultOpenGroups = useMemo(() => {
+    const nextOpenGroups: Record<string, boolean> = {};
+
+    for (const item of items) {
+      if ("section" in item || ("type" in item && item.type === "divider")) {
+        continue;
+      }
+
+      if (
+        "children" in item &&
+        item.children?.some((child) => child.url && pathname.startsWith(child.url))
+      ) {
+        nextOpenGroups[item.title] = true;
+      }
+    }
+
+    return nextOpenGroups;
+  }, [items, pathname]);
+
+  const [openGroups, setOpenGroups] = useState<Record<string, boolean>>(
+    () => defaultOpenGroups
+  );
+
+  const isSectionItem = (item: SidebarItem): item is { section: string } =>
+    "section" in item;
+
+  const isDividerItem = (item: SidebarItem): item is { type: "divider" } =>
+    "type" in item && item.type === "divider";
+
+  const isGroupItem = (
+    item: SidebarItem
+  ): item is SidebarLink & { children: SidebarLink[] } =>
+    !isSectionItem(item) && !isDividerItem(item) && Array.isArray((item as SidebarLink & { children?: SidebarLink[] }).children);
 
   return (
-    <Sidebar className=" bg-black pr-2">
-      <SidebarContent className="flex h-full flex-col justify-between py-4">
+    <Sidebar className="pr-2 bg-black ">
+      <SidebarContent className="flex flex-col justify-between h-full py-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {/* TOP: Logo + menu */}
         <div>
           {/* Logo area */}
@@ -74,22 +183,146 @@ export function AppSidebar({ isAdmin = false }: { isAdmin?: boolean }) {
           </div>
 
           <SidebarGroup>
-            <SidebarGroupLabel className="px-4 pb-1 text-xs font-semibold uppercase tracking-wide text-gray-400">
-              {/* empty label to match spacing */}
-            </SidebarGroupLabel>
             <SidebarGroupContent>
               <SidebarMenu>
-                {items.map((item) => {
-                  const isActive =
-                    pathname === item.url || pathname.startsWith(item.url + "/");
+                {items.map((item, index) => {
+                  if (isSectionItem(item)) {
+                    return (
+                      <SidebarMenuItem key={`${item.section}-${index}`}>
+                        <SidebarGroupLabel className="px-4 pt-4 pb-1 text-xs font-semibold tracking-wide text-gray-300 uppercase">
+                          {item.section}
+                        </SidebarGroupLabel>
+                      </SidebarMenuItem>
+                    );
+                  }
 
-                  const Icon = item.icon;
+                  if (isDividerItem(item)) {
+                    return (
+                      <SidebarMenuItem key={`divider-${index}`} className="my-2">
+                        <div className="h-px mx-4 bg-white/10" />
+                      </SidebarMenuItem>
+                    );
+                  }
+
+                  if (isGroupItem(item)) {
+                    const isOpen = openGroups[item.title] ?? false;
+                    const isActive = item.children.some(
+                      (child) => child.url && (pathname === child.url || pathname.startsWith(child.url + "/"))
+                    );
+                    const Icon = item.icon;
+
+                    return (
+                      <div key={item.title} className="space-y-1">
+                        <SidebarMenuItem>
+                          <SidebarMenuButton
+                            type="button"
+                            onClick={() =>
+                              setOpenGroups((current) => ({
+                                ...current,
+                                [item.title]: !isOpen,
+                              }))
+                            }
+                            className={`group mx-2 rounded-xl px-3 py-2 text-sm font-medium transition-colors ${
+                              isOpen || isActive
+                                ? "bg-[#CC990029] text-[#D4A300] shadow-sm"
+                                : "text-(--inactive-text) hover:bg-(--hover-bg)"
+                            }`}
+                            style={
+                              isOpen || isActive
+                                ? {
+                                    backgroundColor: ACTIVE_BG,
+                                    color: "#D4A300",
+                                  }
+                                : {
+                                    color: INACTIVE_TEXT,
+                                  }
+                            }
+                          >
+                            {Icon ? (
+                              <Icon
+                                className="w-4 h-4"
+                                style={{
+                                  color: isOpen || isActive ? "#D4A300" : INACTIVE_ICON,
+                                }}
+                              />
+                            ) : null}
+                            <span className="flex-1 truncate">{item.title}</span>
+                            <ChevronDown
+                              className={`h-4 w-4 transition-transform duration-200 ${
+                                isOpen ? "rotate-180" : "rotate-0"
+                              }`}
+                              style={{
+                                color: isOpen || isActive ? "#D4A300" : INACTIVE_ICON,
+                              }}
+                            />
+                          </SidebarMenuButton>
+                        </SidebarMenuItem>
+
+                        {isOpen
+                          ? item.children.map((child) => {
+                              const childActive =
+                                child.url &&
+                                (pathname === child.url || pathname.startsWith(child.url + "/"));
+                              const ChildIcon = child.icon;
+
+                              return (
+                                <SidebarMenuItem key={child.title}>
+                                  <SidebarMenuButton
+                                    asChild
+                                    className={`group  mx-2 ml-8 rounded-xl px-3 py-2 text-sm font-medium transition-colors ${
+                                      childActive
+                                        ? "bg-[#CC990029] text-[#D4A300] shadow-sm"
+                                        : "text-(--inactive-text)  hover:bg-(--hover-bg)"
+                                    }`}
+                                    style={
+                                      childActive
+                                        ? {
+                                            backgroundColor: ACTIVE_BG,
+                                            color: "#D4A300",
+                                          }
+                                        : {
+                                            color: INACTIVE_TEXT,
+                                          }
+                                    }
+                                  >
+                                    <Link href={child.url ?? "#"} className="flex items-center gap-3">
+                                      {ChildIcon ? (
+                                        <ChildIcon
+                                          className="w-4 h-4"
+                                          style={{
+                                            color: childActive ? "#D4A300" : INACTIVE_ICON,
+                                          }}
+                                        />
+                                      ) : null}
+                                      <span
+                                        className="truncate"
+                                        style={{
+                                          color: childActive ? "#D4A300" : INACTIVE_TEXT,
+                                        }}
+                                      >
+                                        {child.title}
+                                      </span>
+                                    </Link>
+                                  </SidebarMenuButton>
+                                </SidebarMenuItem>
+                              );
+                            })
+                          : null}
+                      </div>
+                    );
+                  }
+
+                  const leafItem = item as SidebarLink;
+                  const isActive =
+                    leafItem.url &&
+                    (pathname === leafItem.url || pathname.startsWith(leafItem.url + "/"));
+                  const Icon = leafItem.icon;
 
                   return (
-                    <SidebarMenuItem key={item.title}>
+                    <SidebarMenuItem key={leafItem.title}>
                       <SidebarMenuButton
                         asChild
-                        className={`group mx-2 rounded-xl px-3 py-2 text-sm font-medium transition-colors ${
+                        className={`group mx-2  rounded-xl px-3 py-2 text-sm font-medium transition-colors ${
                           isActive
                             ? "bg-[#CC990029] text-[#D4A300] shadow-sm"
                             : "text-(--inactive-text) hover:bg-(--hover-bg)"
@@ -105,23 +338,22 @@ export function AppSidebar({ isAdmin = false }: { isAdmin?: boolean }) {
                               }
                         }
                       >
-                        <Link
-                          href={item.url}
-                          className="flex items-center gap-3"
-                        >
-                          <Icon
-                            className="h-4 w-4"
-                            style={{
-                              color: isActive ? "#D4A300" : INACTIVE_ICON,
-                            }}
-                          />
+                        <Link href={leafItem.url ?? "#"} className="flex items-center gap-3">
+                          {Icon ? (
+                            <Icon
+                              className="w-4 h-4"
+                              style={{
+                                color: isActive ? "#D4A300" : INACTIVE_ICON,
+                              }}
+                            />
+                          ) : null}
                           <span
                             className="truncate"
                             style={{
                               color: isActive ? "#D4A300" : INACTIVE_TEXT,
                             }}
                           >
-                            {item.title}
+                            {leafItem.title}
                           </span>
                         </Link>
                       </SidebarMenuButton>
@@ -136,11 +368,11 @@ export function AppSidebar({ isAdmin = false }: { isAdmin?: boolean }) {
         </div>
 
         {/* BOTTOM: Logout */}
-        <div className="mt-4   pt-4">
-          <button className="mx-4 flex w-[calc(100%-2rem)] items-center gap-2 rounded-lg px-2 py-2 text-sm font-medium text-[#EF4444] hover:bg-red-50">
-            <LogOut className="h-4 w-4" />
+        <div className="pt-4 mt-4">
+          {/* <button className="mx-4 flex w-[calc(100%-2rem)] items-center gap-2 rounded-lg px-2 py-2 text-sm font-medium text-[#EF4444] hover:bg-red-50">
+            <LogOut className="w-4 h-4" />
             <span>Log out</span>
-          </button>
+          </button> */}
         </div>
       </SidebarContent>
     </Sidebar>
