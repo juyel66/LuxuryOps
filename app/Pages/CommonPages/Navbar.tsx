@@ -85,7 +85,7 @@ const Navbar = () => {
                 className="w-5 h-5"
               />
               <Link
-                href="/user-dashboard/overview"
+                href="/admin-dashboard/overview"
                 className="transition opacity-70 hover:opacity-100"
               >
                 DASHBOARD
