@@ -127,7 +127,7 @@ export default function TestimonialHome() {
   const pathname = usePathname();
 
   return (
-    <section className="relative block w-full px-4 py-16 text-white bg-black font sm:px-10 md:py-24 lg:px-20 font-cardo">
+    <section className="relative block w-full px-4 py-16 text-white bg-black md:py-24 font-cardo">
       {/* BACKGROUND GLOW (like design) */}
       <div className="absolute top-0 left-1/2 w-[320px] h-80 -translate-x-1/2 bg-linear-to-br from-yellow-500/20 via-green-400/10 to-blue-500/20 blur-3xl opacity-30 pointer-events-none sm:left-1/3 sm:w-[400px] sm:h-[400px] sm:translate-x-0" />
 
