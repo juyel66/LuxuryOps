@@ -2,7 +2,7 @@
 
 export default function WhyVVIP() {
   return (
-    <section className="px-6 text-white bg-black md:py-15 sm:px-10 lg:px-20">
+    <section className="px-4 text-white bg-black md:py-15 ">
       <div className="container grid grid-cols-1 gap-12 mx-auto co lg:grid-cols-3 lg:gap-20">
         
         {/* LEFT */}
