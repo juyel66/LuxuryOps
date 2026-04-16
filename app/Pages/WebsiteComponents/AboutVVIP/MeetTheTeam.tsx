@@ -91,7 +91,7 @@ const TeamCard = ({ member }: { member: TeamMember }) => {
 
 export default function TeamSlider() {
   return (
-    <section className="px-6 py-24 text-white bg-black sm:px-10 lg:px-20">
+    <section className="px-4 py-24 text-white bg-black ">
       <div className="container mx-auto">
         
         {/* HEADER */}
