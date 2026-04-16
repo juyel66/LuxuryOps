@@ -2,14 +2,14 @@
 
 export default function PrivacyPolicy() {
   return (
-    <section className="w-full bg-[#05070B] text-white py-16 px-4 md:px-16 lg:px-24">
+    <section className="w-full bg-[#05070B] text-white py-16 px-4 md:px-16 ">
       
       <div className="container grid grid-cols-1 mx-auto border-t md:grid-cols-2 border-white/10">
 
         {data.map((item, i) => (
           <div
             key={i}
-            className="p-8 border-b border-white/10 "
+            className="p-4 border-b border-white/10 "
           >
             {/* GOLD LINE */}
             <div className="w-10 h-[2px] bg-[#D4AF37] mb-4" />
