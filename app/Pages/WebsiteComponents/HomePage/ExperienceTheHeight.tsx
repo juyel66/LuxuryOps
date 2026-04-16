@@ -21,7 +21,7 @@ export default function ExperienceTheHeight() {
       <div className="absolute inset-0 bg-black/55" />
 
       {/* CONTENT */}
-      <div className="relative z-10 flex min-h-[650px] items-end px-3 pb-14 pt-20">
+      <div className="relative z-10 flex min-h-[650px] items-end px-4 pb-14 pt-20">
         <div className="container w-full mx-auto ">
           <div className="w-full lg:flex lg:items-end lg:justify-between lg:gap-10">
             <div className="container px-3 mx-auto">
