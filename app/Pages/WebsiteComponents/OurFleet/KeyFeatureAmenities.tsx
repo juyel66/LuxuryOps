@@ -42,7 +42,7 @@ const cars: Car[] = [
 
 export default function KeyFeatureAmenities() {
   return (
-    <section className="px-6 py-20 text-white bg-black sm:px-10 lg:px-20">
+    <section className="px-4 py-20 text-white bg-black ">
       <div className="container mx-auto">
 
         {/* HEADER */}
