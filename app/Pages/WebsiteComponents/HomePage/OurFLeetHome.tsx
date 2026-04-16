@@ -11,7 +11,7 @@ import chekckBox from "../../../../public/images/checkbox-circle-line.svg";
 
 export default function OurFleetHome() {
   return (
-    <section className="px-3 text-white bg-black md:py-24 sm:px-10 lg:px-20">
+    <section className="px-4 text-white bg-black md:py-24 ">
       <div className="container mx-auto ">
         
         {/* TOP CONTENT */}

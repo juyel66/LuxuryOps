@@ -6,8 +6,8 @@ import rightArrow from "../../../../public/images/Component 3 copy.svg";
 
 export default function TheVVIPLuxuryExperience() {
   return (
-    <section className="px-4 py-1 text-white bg-black md:py-20 sm:px-10 lg:px-20 ">
-      <div className="container grid grid-cols-1 gap-12 mx-auto max lg:grid-cols-3 lg:gap-20">
+    <section className=" py-1 text-white bg-black md:py-20  ">
+      <div className="container grid grid-cols-1 gap-12 mx-auto  lg:grid-cols-3 lg:gap-20">
         
         
         <div>
