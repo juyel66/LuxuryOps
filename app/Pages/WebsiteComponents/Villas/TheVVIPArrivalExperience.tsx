@@ -8,7 +8,7 @@ export default function TheVVIPArrivalExperience() {
 
 
   return (
-    <section className="w-full  bg-[#05070B] text-white py-20 px-6 md:px-16 lg:px-24 relative overflow-hidden">
+    <section className="w-full  bg-[#05070B] text-white py-20 px-4 relative overflow-hidden">
       
       <div className="grid items-center grid-cols-1 gap-12 mx-auto max-w-7xl lg:grid-cols-2">
         
