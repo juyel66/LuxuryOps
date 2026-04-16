@@ -20,7 +20,7 @@ export default function OurFleet() {
       <div className="absolute inset-0 bg-black/20" />
 
       {/* CONTENT */}
-      <div className="relative z-10 flex items-center h-full px-6 sm:px-10 lg:px-20">
+      <div className="relative z-10 flex items-center h-full px-4">
         <div className="container flex items-center justify-between w-full mx-auto">
           
           {/* LEFT TEXT */}
