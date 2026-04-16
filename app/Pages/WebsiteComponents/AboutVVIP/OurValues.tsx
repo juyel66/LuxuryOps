@@ -12,7 +12,7 @@ export default function OurValues() {
       
   
       <div className="border border-white/10">
-        <div className="container grid grid-cols-2 gap-8 px-6 py-12 mx-auto text-center sm:px-10 lg:px-20 sm:grid-cols-4">
+        <div className="container grid grid-cols-2 gap-8 px-4 py-12 mx-auto text-center sm:grid-cols-4">
           
           <div>
             <h3 className="text-[#D4AF37] text-2xl sm:text-3xl font-semibold">
@@ -54,7 +54,7 @@ export default function OurValues() {
       </div>
 
       
-      <div className="px-6 py-24 sm:px-10 lg:px-20">
+      <div className="px-4 py-24 ">
         <div className="container mx-auto text-center">
           
           {/* TITLE */}
