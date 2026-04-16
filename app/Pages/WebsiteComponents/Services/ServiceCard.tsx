@@ -191,7 +191,7 @@ const servicesData: Service[] = [
 
 export default function ServiceCard() {
   return (
-    <section className="px-3 text-white bg-black md:py-20 font-cardo sm:px-10 lg:px-20">
+    <section className="px-4 text-white bg-black md:py-20 font-cardo ">
       <div className="container mx-auto space-y-16">
         
         {servicesData.map((service, index) => (
@@ -255,16 +255,16 @@ export default function ServiceCard() {
                   className="group inline-flex items-center gap-3 border border-[#D4AF37] px-5 py-2 text-xs tracking-wider uppercase text-[#D4AF37] transition-all duration-300 hover:bg-[#D4AF37] hover:text-white"
                 >
                   Details View
-                  <Image src={rightArrowYellow} alt="" className="w-4 h-4 group-hover:hidden" />
-                  <Image src={rightArrow} alt="" className="hidden w-4 h-4 group-hover:block" />
+                  <Image src={rightArrowYellow} alt="" className="w-6 h-6 group-hover:hidden" />
+                  <Image src={rightArrow} alt="" className="hidden w-6 h-6 group-hover:block" />
                 </Link>
 
                 <Link
                   href="#"
-                  className="inline-flex items-center gap-3 bg-[#D4AF37] px-5 py-2 text-xs tracking-wider uppercase text-white transition-all duration-300 hover:opacity-90"
+                  className="inline-flex items-center gap-3 bg-[#D4AF37] px-7 py-3 text-xs tracking-wider uppercase text-white transition-all duration-300 hover:opacity-90"
                 >
                   Book Now
-                  <Image src={rightArrow} alt="" className="w-4 h-4" />
+                  <Image src={rightArrow} alt="" className="w-6 h-6" />
                 </Link>
 
               </div>
