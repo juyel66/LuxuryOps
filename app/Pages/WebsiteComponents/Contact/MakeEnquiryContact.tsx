@@ -8,7 +8,7 @@ import rightArrow from "../../../../public/images/Component 3.svg";
 
 export default function MakeEnquiryContact() {
   return (
-    <section className="w-full bg-[#05070B] text-white py-16 px-4 md:px-16 lg:px-24">
+    <section className="w-full bg-[#05070B] text-white py-16 px-4 ">
       
       <div className="container grid items-center grid-cols-1 gap-12 mx-auto lg:grid-cols-2">
 
