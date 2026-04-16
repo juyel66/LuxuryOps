@@ -71,7 +71,7 @@ export default function FeaturedAccommodation() {
         
           <Link
             href="/villas/all-villas"
-            className="flex items-center gap-2 px-6 py-3 text-sm tracking-wide transition border border-white/30 hover:bg-yellow-500 hover:text-white"
+            className="flex items-center gap-2 px-4 py-3 text-sm tracking-wide transition border border-white/30 hover:bg-yellow-500 hover:text-white"
           >
             BOOK YOUR ACCOMMODATION <Image src={rightArrow} alt="star" className="w-4 h-4" />
           </Link>
