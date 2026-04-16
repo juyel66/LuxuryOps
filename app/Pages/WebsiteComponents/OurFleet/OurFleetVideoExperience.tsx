@@ -9,7 +9,7 @@ import carVideo from "../../../../public/images/Component 16.svg";
 
 export default function OurFleetVideoExperience() {
   return (
-    <section className="px-6 py-20 text-white bg-black sm:px-10 lg:px-20">
+    <section className="px-4 py-20 text-white bg-black ">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-10">
 
         {/* LEFT CONTENT */}
