@@ -79,13 +79,13 @@ const fleetData: Fleet[] = [
 
 export default function OurFleetCard() {
   return (
-    <div>
+    <div className="bg-black">
 
-        <div className="container px-3 mx-auto ">
+        <div className="container px-3 py-10 mx-auto ">
             <h1 className="text-2xl md:text-4xl font-cardo">Our Vanguard Collection: A Symphony <br /> Of Opulent Travel</h1>
             <p className="mt-5 text-[#9CA3AF] font-cardo">Step into our world where travel is transformed into a bespoke sanctuary of refinement. Our curated fleet represents the absolute pinnacle of automotive excellence, meticulously selected to provide an atmosphere of unrivaled prestige and serenity. Each vehicle in our collection serves as a rolling testament to sophisticated engineering and artisanal craftsmanship, designed specifically for those who demand the extraordinary as their standard. From the whisper-quiet cabins of our flagship sedans to the expansive, custom-appointed interiors of our luxury suites on wheels, we invite you to experience an art of the journey, redefined. Explore the embodiments of grace, power, and discretion that await.</p>
         </div>
-        <section className="px-6 py-24 text-white bg-black sm:px-10 lg:px-20">
+        <section className="px-4 py-24 text-white ">
       <div className="container grid grid-cols-1 gap-8 mx-auto md:grid-cols-3 lg:gap-10">
         
         {fleetData.map((car) => (
@@ -120,9 +120,9 @@ export default function OurFleetCard() {
               <div className="mb-4 border-t border-white/10" />
 
               {/* SPEC ROW */}
-              <div className="flex items-center gap-6 text-[#D4AF37] text-sm mb-4">
+              <div className="flex items-center  gap-6 text-[#D4AF37] text-sm mb-4">
                 <div>
-                  <span className="block text-base font-semibold">{car.doors}</span>
+                  <span className="block text-base font-semibold text-center ">{car.doors}</span>
                   <span className="text-xs text-[#9CA3AF]">Doors</span>
                 </div>
 
@@ -131,12 +131,12 @@ export default function OurFleetCard() {
                 
 
                 <div>
-                  <span className="block text-base font-semibold">{car.passengers}</span>
+                  <span className="block text-base font-semibold text-center">{car.passengers}</span>
                   <span className="text-xs text-[#9CA3AF]">Passengers</span>
                 </div>
 
                 <div>
-                  <span className="block text-base font-semibold">{car.ac}</span>
+                  <span className="block text-base font-semibold text-center">{car.ac}</span>
                   <span className="text-xs text-[#9CA3AF]">Air Conditioned</span>
                 </div>
               </div>
@@ -147,7 +147,7 @@ export default function OurFleetCard() {
               {/* FEATURES */}
               <ul className="mb-6 space-y-2">
                 {car.features.map((feature, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-[#9CA3AF]">
+                  <li key={i} className="flex  items-start gap-2 text-sm text-[#9CA3AF]">
                     <Image src={tag} alt="feature" className="mt-0.5 h-4 w-4 shrink-0" />
                     {feature}
                   </li>
