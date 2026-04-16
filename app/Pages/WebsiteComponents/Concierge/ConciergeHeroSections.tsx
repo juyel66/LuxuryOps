@@ -5,7 +5,7 @@ import Image from "next/image";
 import bgImage from "../../../../public/images/Section (1).svg"
 import planeIcon from "../../../../public/images/Container (14).svg"
 import planeIconBlue from "../../../../public/images/Container (15).svg"
-import dividerMobile from "../../../../public/images/Container (23).svg";
+// import dividerMobile from "../../../../public/images/Container (23).svg";
 
 
 export default function ConciergeHeroSections() {
@@ -27,7 +27,7 @@ export default function ConciergeHeroSections() {
       <div className="absolute inset-0 bg-black/70" />
 
       {/* CONTENT */}
-      <div className="relative z-10 flex items-center h-full px-6 sm:px-10 lg:px-20">
+      <div className="relative z-10 flex items-center h-full px-4 ">
         <div className="container flex items-center justify-between w-full mx-auto">
           
           
