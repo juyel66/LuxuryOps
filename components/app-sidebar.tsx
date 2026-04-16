@@ -56,17 +56,16 @@ const adminItems: SidebarItem[] = [
   { section: "MAIN" },
   { title: "Overview", icon: Home, url: "/admin-dashboard/overview" },
   { title: "Bookings", icon: Calendar, url: "/admin-dashboard/bookings" },
-  { title: "Daily Jobs", icon: ClipboardList, url: "/admin-dashboard/daily-jobs" },
   { title: "Hotels", icon: Building2, url: "/admin-dashboard/hotels" },
   { title: "Entities", icon: Landmark, url: "/admin-dashboard/entities" },
-  { title: "Fleet", icon: Car, url: "/admin-dashboard/fleet" },
+  { title: "Fleet", icon: Car, url: "/admin-dashboard/fleet-management" },
   {
     title: "People",
     icon: Users,
     children: [
-      { title: "User Management", icon: User, url: "/admin-dashboard/users" },
-      { title: "Drivers", icon: Truck, url: "/admin-dashboard/drivers" },
-      { title: "Team", icon: Shield, url: "/admin-dashboard/team" },
+      { title: "User Management", icon: User, url: "/admin-dashboard/user-management" },
+      { title: "Drivers", icon: Truck, url: "/admin-dashboard/drivers-management" },
+      { title: "Team", icon: Shield, url: "/admin-dashboard/team-management" },
     ],
   },
   {
