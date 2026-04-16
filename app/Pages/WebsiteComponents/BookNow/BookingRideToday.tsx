@@ -33,7 +33,7 @@ export default function BookRideToday() {
             — Book Now
           </p>
 
-          <h2 className="mb-4 font-serif text-3xl md:text-5xl">
+          <h2 className="mb-4 text-3xl font-cardo md:text-5xl">
             Book Your Ride Today
           </h2>
 
@@ -93,7 +93,7 @@ export default function BookRideToday() {
         </div>
 
         {/* BUTTON */}
-        <button className="mt-6 w-full bg-[#D4AF37] text-black py-4 uppercase tracking-wider text-sm flex items-center justify-center gap-2 hover:opacity-90 transition">
+        <button className="mt-6 w-full bg-[#D4AF37] text-white py-4 uppercase tracking-wider text-sm flex items-center justify-center gap-2 hover:opacity-90 transition">
           Send Your Booking
           <Image src={rightArrow} alt="" className="w-4 h-4" />
         </button>
