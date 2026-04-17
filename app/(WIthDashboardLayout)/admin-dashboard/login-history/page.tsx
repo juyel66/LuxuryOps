@@ -37,7 +37,7 @@ export default function CustomerLoginHistory() {
   const [statusFilter, setStatusFilter] = useState<"all" | "active" | "logged_out">("all");
   const [openFilter, setOpenFilter] = useState(false);
 
-  // ✅ FILTER LOGIC
+  // FILTER LOGIC
   const filteredData = data.filter((item) => {
     const matchesSearch =
       item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
