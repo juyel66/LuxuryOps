@@ -158,7 +158,7 @@ export default function CustomerLoginHistory() {
                   </td>
 
                   <td className="p-4 text-right">
-                    <button>
+                    <button className="cursor-pointer hover:text-red-500">
                       <Trash2 size={16} />
                     </button>
                   </td>
