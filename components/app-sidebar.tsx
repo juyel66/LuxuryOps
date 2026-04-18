@@ -84,7 +84,7 @@ const adminItems: SidebarItem[] = [
     title: "Summary",
     icon: BarChart3,
     children: [{ title: "Financial Summary", url: "/admin-dashboard/financial-summary" },
-      { title: "Driver Summary", url: "/admin-dashboard/Driver-summary" }
+      { title: "Driver Summary", url: "/admin-dashboard/driver-summary" }
     ],
   },
   { title: "Payroll", icon: CreditCard, url: "/admin-dashboard/payroll" },
