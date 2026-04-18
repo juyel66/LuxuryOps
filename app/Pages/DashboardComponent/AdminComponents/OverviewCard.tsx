@@ -58,7 +58,7 @@ const stats: StatCard[] = [
 
 export default function StatsCards() {
   return (
-    <div className="w-full p-6 bg-black">
+    <div className="w-full mt-10 bg-black">
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {stats.map((item, index) => (
           <div
@@ -67,7 +67,7 @@ export default function StatsCards() {
           >
             {/* ICON */}
             <div
-              className={`absolute top-4 right-4 flex items-center justify-center w-9 h-9 rounded-lg ${item.iconBg}`}
+              className={`absolute top-4 right-2 flex items-center justify-center w-9 h-9 rounded-lg ${item.iconBg}`}
             >
               <div className={`${item.iconColor}`}>{item.icon}</div>
             </div>
