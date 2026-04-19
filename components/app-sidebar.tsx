@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import dashboardLogo from "../public/images/dashboardLogo.svg";
+import dashboardLogo from "../public/images/logoooo.svg";
 import { usePathname } from "next/navigation";
 import { useMemo, useState } from "react";
 import type { ComponentType, CSSProperties } from "react";
@@ -161,7 +161,7 @@ const INACTIVE_ICON = "#C7CBD6";
 
 export function AppSidebar({ isAdmin = false }: { isAdmin?: boolean }) {
   const pathname = usePathname();
-  const items = isAdmin ? userItems : driversItems;
+  const items = isAdmin ? userItems : userItems;
   const defaultOpenGroups = useMemo(() => {
     const nextOpenGroups: Record<string, boolean> = {};
 
