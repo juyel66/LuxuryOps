@@ -25,7 +25,7 @@ const totalEarnData = [
   { month: "Dec", value: 180000 },
   { month: "Jan", value: 160000 },
   { month: "Feb", value: 175000 },
-  { month: "Mar", value: 190000 },
+  {month: "Mar", value: 190000}
 ];
 
 const pieData = [
