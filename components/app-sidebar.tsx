@@ -27,6 +27,12 @@ import {
   LogOut,
   ArrowLeft,
   ChevronDown,
+  CarIcon,
+  DollarSignIcon,
+  FileBox,
+  BookAIcon,
+  FileBoxIcon,
+  NotepadText,
 } from "lucide-react";
 
 import {
@@ -40,6 +46,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import Image from "next/image";
+import { FaDollarSign } from "react-icons/fa";
 
 type SidebarLink = {
   title: string;
@@ -107,12 +114,41 @@ const adminItems: SidebarItem[] = [
 ];
 
 
+const staffItem = [
+  { section: "STAFF" },
+  { title: "Overview", icon: Home, url: "/staff-dashboard/overview" },
+  { title: "Bookings", icon: Calendar, url: "/staff-dashboard/bookings" },
+  { title: "Hotels", icon: Building2, url: "/staff-dashboard/hotels" },
+  { title: "Entities", icon: Landmark, url: "/staff-dashboard/entities" },
+  {title: "villa", icon: Building2, url: "/staff-dashboard/villas" },
+];
+
+
+
+
+const driversItems = [
+  
+  { section: "DRIVER" },
+  { title: "Overview", icon: Home, url: "/driver-dashboard/overview" },
+  { title: "My Schedule", icon: Calendar, url: "/driver-dashboard/my-schedule" },
+  { title: "Trip History", icon: CarIcon, url: "/driver-dashboard/trip-history" },
+  { title: "Earning", icon: DollarSignIcon, url: "/driver-dashboard/earning" },
+  { title: "Payslips", icon: NotepadText, url: "/driver-dashboard/payslips" },
+  { section: "SYSTEM" },
+  { title: "Settings", icon: Settings, url: "/driver-dashboard/settings" },
+]
+
+
+
+
 const userItems = [
-  {
-    title: "Dashboard",
-    url: "/user-dashboard/dashboard",
-    icon: Home,
-  },
+  { section: "USER" },
+  { title: "Overview", icon: Home, url: "/user-dashboard/overview" },
+  { title: "My Bookings", icon: Calendar, url: "/user-dashboard/my-bookings" },
+   { section: "SYSTEM" },
+  { title: "Settings", icon: Settings, url: "/user-dashboard/settings" },
+  
+
   
 ];
 
@@ -125,7 +161,7 @@ const INACTIVE_ICON = "#C7CBD6";
 
 export function AppSidebar({ isAdmin = false }: { isAdmin?: boolean }) {
   const pathname = usePathname();
-  const items = isAdmin ? userItems : adminItems;
+  const items = isAdmin ? userItems : driversItems;
   const defaultOpenGroups = useMemo(() => {
     const nextOpenGroups: Record<string, boolean> = {};
 
