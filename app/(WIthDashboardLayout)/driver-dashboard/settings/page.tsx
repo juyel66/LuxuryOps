@@ -92,6 +92,7 @@ export default function SettingsTabsPage() {
             active={activeTab === "notifications"}
             onClick={() => setActiveTab("notifications")}
           />
+          
 
        
         </div>
