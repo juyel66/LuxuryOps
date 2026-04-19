@@ -5,9 +5,6 @@ import rightArrow from "../../../../public/images/Component 3 copy.svg";
 import Image from "next/image";
 
 
-
-
-
 const HomePageHeroSections = () => {
   return (
     <section className=" relative w-full h-[82vh] overflow-hidden  text-white">
