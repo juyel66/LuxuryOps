@@ -239,7 +239,7 @@ function BookingCard({ item, onAddReview }: BookingCardProps & { onAddReview: ()
       <div className="grid grid-cols-1 gap-4 text-sm md:grid-cols-3">
 
         <div className="flex gap-2">
-          <MapPin size={16} className="mt-1 text-yellow-400" />
+          <MapPin size={16} className="text-yellow-400 mt-2.5" />
           <div>
             <p className="text-xs text-gray-400">Pickup Location</p>
             <p>{item.pickup}</p>
@@ -247,7 +247,7 @@ function BookingCard({ item, onAddReview }: BookingCardProps & { onAddReview: ()
         </div>
 
         <div className="flex gap-2">
-          <Calendar size={16} className="mt-1 text-yellow-400" />
+          <Calendar size={16} className="mt-2.5 text-yellow-400" />
           <div>
             <p className="text-xs text-gray-400">Pickup Date & Time</p>
             <p>{item.datetime}</p>
@@ -255,7 +255,7 @@ function BookingCard({ item, onAddReview }: BookingCardProps & { onAddReview: ()
         </div>
 
         <div className="flex gap-2">
-          <User size={16} className="mt-1 text-yellow-400" />
+          <User size={16} className="mt-2.5 text-yellow-400" />
           <div>
             <p className="text-xs text-gray-400">Assigned Driver</p>
             <p>{item.driver}</p>
@@ -263,7 +263,7 @@ function BookingCard({ item, onAddReview }: BookingCardProps & { onAddReview: ()
         </div>
 
         <div className="flex gap-2 md:col-span-2">
-          <MapPin size={16} className="mt-1 text-red-400" />
+          <MapPin size={16} className="mt-2.5 text-red-400" />
           <div>
             <p className="text-xs text-gray-400">Drop Location</p>
             <p>{item.drop}</p>
