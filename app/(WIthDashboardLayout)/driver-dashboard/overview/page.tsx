@@ -108,7 +108,7 @@ function StatCard({ title, value, icon, subtitle, isFirst = false }: any) {
 
     {/* Subtitle under value */}
     {subtitle && (
-      <p className={`text-[11px] mt-1 ${isFirst ? "text-green-400" : "text-gray-400"}`}>
+      <p className={`text-[11px] mt-2.5  ${isFirst ? "text-green-400" : "text-gray-400"}`}>
         {subtitle}
       </p>
     )}
@@ -141,7 +141,7 @@ function ScheduleCard({ name, price, status, button, color }: any) {
             <p className="text-xs text-gray-400">Mercedes-Benz S-Class</p>
           </div>
 
-          <span className="text-[10px] bg-[#1A1F2B] px-2 py-1 rounded">
+          <span className="text-[10px] text-black bg-[#1A1F2B] px-2 py-1 rounded">
             BK-2026-146
           </span>
 
