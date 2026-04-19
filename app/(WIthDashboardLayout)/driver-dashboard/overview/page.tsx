@@ -156,7 +156,7 @@ function ScheduleCard({ name, price, status, button, color }: any) {
       {/* Locations */}
       <div className="grid grid-cols-1 gap-4 text-sm md:grid-cols-2">
         <div className="flex items-start gap-2">
-          <MapPin size={16} className="mt-1 text-yellow-400" />
+          <MapPin size={16} className="mt-2.5 text-yellow-400" />
           <div>
             <p className="text-xs text-gray-400">Pickup Location</p>
             <p>Heathrow Airport Terminal 5</p>
@@ -164,7 +164,7 @@ function ScheduleCard({ name, price, status, button, color }: any) {
         </div>
 
         <div className="flex items-start gap-2">
-          <MapPin size={16} className="mt-1 text-red-400" />
+          <MapPin size={16} className="mt-2.5 text-red-400" />
           <div>
             <p className="text-xs text-gray-400">Drop Location</p>
             <p>One Hyde Park, Knightsbridge</p>
