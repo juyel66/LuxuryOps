@@ -100,7 +100,7 @@ const adminItems: SidebarItem[] = [
     ],
   },
   { title: "Analytics", icon: Activity, url: "/admin-dashboard/analytics" },
-  { title: "Settings", icon: Settings, url: "/admin-dashboard/settings" },
+  { title: "Settings", icon: Settings, url: "/admin-dashboard/setting" },
   { type: "divider" },
   { title: "Logout", icon: LogOut, url: "/logout" },
   { title: "Back to Website", icon: ArrowLeft, url: "/" },
