@@ -161,7 +161,7 @@ const INACTIVE_ICON = "#C7CBD6";
 
 export function AppSidebar({ isAdmin = false }: { isAdmin?: boolean }) {
   const pathname = usePathname();
-  const items = isAdmin ? userItems : userItems;
+  const items = isAdmin ? userItems : adminItems;
   const defaultOpenGroups = useMemo(() => {
     const nextOpenGroups: Record<string, boolean> = {};
 
