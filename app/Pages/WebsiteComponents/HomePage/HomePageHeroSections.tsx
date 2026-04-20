@@ -24,12 +24,13 @@ const HomePageHeroSections = () => {
       <div className="absolute inset-0 z-10" />
 
     
-      <div className="container relative z-20 flex items-center h-full px-4 mx-auto md:px-0 ">
+      <div className="container relative z-20 flex items-center h-full px-4 mx-auto ">
         <div className="max-w-3xl">
 
          
           <div className="flex items-center gap-3 mb-2">
-            <span className="text-2xl text-gray-400 md:text-3xl">— 01</span>
+             <div className="w-10 h-px bg-[#7A8A9A]" />
+            <span className="text-2xl text-[#7A8A9A] md:text-3xl font-cardo">01</span>
           </div>
 
           <span className="text-yellow-500  md:text-[18px] text-[17px]  tracking-widest uppercase block mb-4">
@@ -39,7 +40,7 @@ const HomePageHeroSections = () => {
           
           <h1
             className="font-cardo italic font-normal leading-[116%]
-            text-[38px] sm:text-[40px] md:text-[56px] lg:text-[72px]"
+            text-[32px] sm:text-[42px] lg:text-[56px]"
           >
             VVIP <br />
             Luxury Chauffeur <br />
