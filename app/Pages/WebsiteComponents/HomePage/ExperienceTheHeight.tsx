@@ -32,11 +32,9 @@ export default function ExperienceTheHeight() {
                 </p>
               </div>
 
-              <h1 className="mb-5 font-cardo md:text-[44px] text-[30px] italic leading-[1.06] text-[#F5F5F5] sm:text-[54px] lg:text-[58px]">
-                Experience The Height Of
-                <br />
-                Comfort With VVIP
-                <br />
+              <h1 className="mb-5 font-cardo text-[32px] md:text-[52px]  italic leading-[1.06] text-[#F5F5F5] ">
+                Experience The Height Of Comfort With VVIP
+              
                 Luxury
               </h1>
 
