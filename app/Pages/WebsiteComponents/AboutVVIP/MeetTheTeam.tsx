@@ -7,9 +7,9 @@ import "swiper/css/free-mode";
 
 import { FreeMode } from "swiper/modules";
 
-import img1 from "@/public/images/img1.svg";
-import img2 from "@/public/images/img2.svg";
-import img3 from "@/public/images/img3.svg";
+import img1 from "@/public/images/Image (6).svg";
+import img2 from "@/public/images/Image (7).svg";
+import img3 from "@/public/images/Image (8).svg";
 import type { StaticImageData } from "next/image";
 
 type TeamMember = {
