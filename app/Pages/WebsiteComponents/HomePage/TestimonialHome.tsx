@@ -95,7 +95,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
     <div className="flex md:h-[200px] h-[200px] flex-col p-6 border border-white/10 rounded-xl bg-white/5 backdrop-blur-md">
       <p
-        className="mb-6 text-sm leading-[1.8] text-[#CFCFCF]"
+        className="mb-6  leading-[1.8] text-[#CFCFCF]"
         style={{
           display: "-webkit-box",
           WebkitLineClamp: 6,
@@ -141,7 +141,7 @@ export default function TestimonialHome() {
             } items-center gap-4 mb-4`}
           >
             <div className="w-10 h-px bg-[#7A8A9A]" />
-            <span className="text-2xl text-gray-400 md:text-3xl">05</span>
+            <span className="text-2xl text-[#7A8A9A] md:text-3xl font-cardo">05</span>
           </div>
 
           <h2 className="text-[34px] sm:text-[40px] lg:text-[44px] font-cardo italic mb-4">
