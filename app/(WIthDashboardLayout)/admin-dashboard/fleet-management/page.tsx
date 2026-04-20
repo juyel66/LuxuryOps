@@ -84,7 +84,7 @@ const stats: Array<{ title: string; value: string; sub: string; color: string }>
 
 export default function FleetManagementDashboard() {
   return (
-    <div className="p-3 space-y-5 text-white sm:p-6 sm:space-y-6">
+    <div className="mt-5 space-y-5 text-white sm:space-y-6">
 
       {/* HEADER */}
       <div className="flex flex-col justify-between gap-3 sm:gap-4 md:flex-row md:items-start">
