@@ -43,7 +43,7 @@ export default function VillasImage() {
 
               {/* HEADING */}
               <h2 className="md:flex hidden text-3xl md:text-5xl leading-[1.2] mb-6">
-                A Curated Portfolio of Luxury <br /> Villas
+                A Curated Portfolio of Luxury  Villas
               </h2>
               <h2 className="md:hidden flex text-3xl md:text-5xl leading-[1.2] mb-6">
                 A Curated Portfolio of Luxury  Villas
