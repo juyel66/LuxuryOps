@@ -34,7 +34,7 @@ const features = [
 export default function ThePrivetLifeStyle() {
   return (
     <div className="text-white bg-black font-cardo">
-      <section className="container px-4 py-20 mx-auto text-center md:py-28">
+      <section className="container px-4 py-10 mx-auto text-center md:py-10">
         
         {/* TOP LABEL (04 with lines both sides) */}
         <div className="items-center justify-center hidden gap-4 mb-6 md:flex">
@@ -97,7 +97,7 @@ export default function ThePrivetLifeStyle() {
             </div>
           ))}
         </div>
-        <p className="mt-20">Each service is delivered with precision, discretion, and white-glove care.</p>
+        <p className="mt-8">Each service is delivered with precision, discretion, and white-glove care.</p>
 
       </section>
     </div>
