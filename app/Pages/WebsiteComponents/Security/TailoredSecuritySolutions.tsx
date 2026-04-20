@@ -43,7 +43,7 @@ const data = [
 export default function TailoredSecuritySolutions() {
   return (
     <div className="text-white bg-black font-cardo">
-      <section className="container px-4 py-20 mx-auto md:py-28">
+      <section className="container px-4 py-10 mx-auto md:py-10">
         
         {/* Top Label */}
          <div className="flex items-center gap-4 mb-6">
