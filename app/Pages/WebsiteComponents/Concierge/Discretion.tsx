@@ -9,7 +9,13 @@ export default function Discretion() {
       <section className="container px-4 py-24 mx-auto text-center md:py-32">
         
         {/* Top Label */}
-        <div className="flex items-center justify-start gap-4 mb-6">
+        <div className="flex items-center justify-start gap-4 mb-6 md:hidden">
+          <span className="text-[#D4AF37] text-lg">03</span>
+            <Image src={dividerMobile} alt="divider mobile" className="block md:hidden" />
+            <Image src={dividerMobile} alt="divider" className="hidden md:block" />
+        </div>
+        
+        <div className="items-center justify-center hidden gap-4 mb-6 md:flex">
           <span className="text-[#D4AF37] text-lg">03</span>
             <Image src={dividerMobile} alt="divider mobile" className="block md:hidden" />
             <Image src={dividerMobile} alt="divider" className="hidden md:block" />
