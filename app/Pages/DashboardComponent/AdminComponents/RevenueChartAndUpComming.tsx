@@ -71,7 +71,7 @@ export default function RevenueChartAndUpComming() {
                 key={item}
                 className={`px-3 py-1 text-xs sm:text-sm rounded-md transition ${
                   item === "1Y"
-                    ? "bg-yellow-500 text-black"
+                    ? "bg-yellow-500 text-white"
                     : "bg-[#111] text-gray-400"
                 }`}
               >
