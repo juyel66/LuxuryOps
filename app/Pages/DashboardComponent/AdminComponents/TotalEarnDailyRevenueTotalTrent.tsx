@@ -44,7 +44,7 @@ const profitTrendData = [
 
 export default function TotalEarnDailyRevenueTotalTrent() {
   return (
-    <div className=" bg-[#07090D] text-white md:p-2 mt-5 md:mt-0">
+    <div className=" bg-[#07090D] text-white  mt-5 md:mt-0">
 
       {/* TOP GRID */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
