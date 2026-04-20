@@ -29,7 +29,7 @@ const features = [
 export default function SecurityIntegrated() {
   return (
     <div className="text-white bg-black font-cardo">
-      <section className="container px-4 py-20 mx-auto text-center md:py-28">
+      <section className="container px-4 py-10 mx-auto text-center md:py-5">
         
         {/* TOP LABEL (04 with lines both sides) */}
         <div className="items-center justify-center hidden gap-4 mb-6 md:flex">
