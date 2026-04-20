@@ -33,7 +33,7 @@ export default function DashboardNavbar() {
     <div className="w-full bg-[#05070B] border-b  border-[#1A1F2B] py-3 flex items-center justify-between">
 
       {/* LEFT */}
-      <div>
+      <div className="ml-8 md:ml-0">
         <h1 className="text-[18px] font-semibold text-white">
           Dashboard
         </h1>

@@ -4,7 +4,7 @@ import { Upload, Plus } from "lucide-react";
 
 export default function AddVilla() {
   return (
-    <div className="min-h-screen bg-[#07090D] text-white p-4 md:p-8">
+    <div className="min-h-screen bg-[#07090D] text-white ">
 
       {/* HEADER */}
       <h1 className="mb-6 font-serif text-2xl">Add Villas</h1>

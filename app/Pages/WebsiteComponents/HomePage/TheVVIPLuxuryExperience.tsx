@@ -6,8 +6,8 @@ import rightArrow from "../../../../public/images/Component 3 copy.svg";
 
 export default function TheVVIPLuxuryExperience() {
   return (
-    <section className=" py-1 text-white bg-black md:py-20  ">
-      <div className="container grid grid-cols-1 gap-12 mx-auto  lg:grid-cols-3 lg:gap-20">
+    <section className="py-1 pl-4 pr-4 text-white bg-black md:py-20 ">
+      <div className="container grid grid-cols-1 gap-12 mx-auto lg:grid-cols-3 lg:gap-20">
         
         
         <div>
@@ -18,7 +18,7 @@ export default function TheVVIPLuxuryExperience() {
           </div>
 
           {/* Heading */}
-          <h2 className="text-[36px] sm:text-[42px] lg:text-[48px] leading-[1.2] font-cardo italic mb-6">
+          <h2 className="text-[36px]  sm:text-[42px] lg:text-[48px] leading-[1.2] font-cardo italic mb-6">
             The VVIP Luxury <br /> Experience
           </h2>
 

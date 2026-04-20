@@ -114,7 +114,7 @@ const Navbar = () => {
         <div
           className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
             isMenuOpen
-              ? "mt-4 max-h-96 opacity-100"
+              ? "mt-4  opacity-100"
               : "max-h-0 opacity-0 pointer-events-none"
           }`}
         >
@@ -143,6 +143,15 @@ const Navbar = () => {
               >
                 BOOK NOW <Image src={rightArrow} alt="arrow" className="w-4 h-4 ml-2" />
               </Link>
+              <Link
+                href="/admin-dashboard/overview"
+                onClick={() => setIsMenuOpen(false)}
+                className="mt-2  justify-center bg-yellow-500 text-white flex items-center px-5 py-2.5 font-medium"
+              >
+                DASHBOARD 
+              </Link>
+
+              
             </ul>
           </div>
         </div>

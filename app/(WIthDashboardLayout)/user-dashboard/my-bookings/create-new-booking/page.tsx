@@ -99,7 +99,7 @@ export default function CreateBookingPage() {
   );
 }
 
-/* ================= INPUT ================= */
+
 
 function Input({ label, placeholder }: any) {
   return (
