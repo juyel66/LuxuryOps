@@ -4,11 +4,75 @@ import Image from "next/image";
 import imgMain from "../../../../public/images/frontImage (1) copy.svg";
 import imgBack from "../../../../public/images/BackImage.svg";
 import rightArrow from "../../../../public/images/Component 3.svg";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 
 export default function MakeEnquiryContact() {
   return (
-    <section className="w-full bg-[#05070B] text-white py-16 px-4 ">
+  <div>
+
+       <div className="w-full bg-[#05070B] py-12 px-4">
+      <div className="grid grid-cols-1 gap-6 mx-auto max-w-7xl sm:grid-cols-2 lg:grid-cols-4">
+
+        {/* PHONE */}
+        <div className="bg-[#0B0F17] border border-[#1A1F2B] rounded-xl p-8 text-center hover:border-[#C89B3C] transition-all">
+          <div className="flex justify-center mb-5">
+            <Phone className="w-8 h-8 text-[#C89B3C]" strokeWidth={2} />
+          </div>
+          <h3 className="text-white text-[22px] font-semibold mb-4">
+            Phone
+          </h3>
+          <p className="text-[#A0A6B1] text-[15px] leading-7">
+            +1 (246) 249 – 7101 <br />
+            +1 (246) 242 – 5851
+          </p>
+        </div>
+
+        {/* EMAIL */}
+        <div className="bg-[#0B0F17] border border-[#1A1F2B] rounded-xl p-8 text-center hover:border-[#C89B3C] transition-all">
+          <div className="flex justify-center mb-5">
+            <Mail className="w-8 h-8 text-[#C89B3C]" strokeWidth={2} />
+          </div>
+          <h3 className="text-white text-[22px] font-semibold mb-4">
+            Email
+          </h3>
+          <p className="text-[#A0A6B1] text-[15px] leading-7">
+            info@wipluxury.com <br />
+            bookings@wipluxury.com
+          </p>
+        </div>
+
+        {/* ADDRESS */}
+        <div className="bg-[#0B0F17] border border-[#1A1F2B] rounded-xl p-8 text-center hover:border-[#C89B3C] transition-all">
+          <div className="flex justify-center mb-5">
+            <MapPin className="w-8 h-8 text-[#C89B3C]" strokeWidth={2} />
+          </div>
+          <h3 className="text-white text-[22px] font-semibold mb-4">
+            Address
+          </h3>
+          <p className="text-[#A0A6B1] text-[15px] leading-7">
+            123 Luxury Avenue <br />
+            New York, NY 10001
+          </p>
+        </div>
+
+        {/* HOURS */}
+        <div className="bg-[#0B0F17] border border-[#1A1F2B] rounded-xl p-8 text-center hover:border-[#C89B3C] transition-all">
+          <div className="flex justify-center mb-5">
+            <Clock className="w-8 h-8 text-[#C89B3C]" strokeWidth={2} />
+          </div>
+          <h3 className="text-white text-[22px] font-semibold mb-4">
+            Hours
+          </h3>
+          <p className="text-[#A0A6B1] text-[15px] leading-7">
+            24/7 Availability <br />
+            Always at your service
+          </p>
+        </div>
+
+      </div>
+    </div>
+      <section className="w-full bg-[#05070B] text-white py-16 px-4 ">
       
       <div className="container grid items-center grid-cols-1 gap-12 mx-auto lg:grid-cols-2">
 
@@ -47,24 +111,45 @@ export default function MakeEnquiryContact() {
 
           {/* FORM */}
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            
-            <input placeholder="First Name" className="input-style" />
-            <input placeholder="Last Name" className="input-style" />
+            <div>
+              <label className="text-gray-300"  htmlFor="name">First Name</label>
+            <input placeholder="First Name" className="mt-1 input-style" />
+            </div>
+           <div>
+              <label className="text-gray-300"  htmlFor="name">Last Name</label>
+             <input placeholder="Last Name" className="mt-1 input-style" />
+           </div>
 
-            <input placeholder="+44 7900 000 000" className="input-style" />
-            <input placeholder="Your Email" className="input-style" />
+           <div>
+              <label className="text-gray-300"  htmlFor="phone">Phone Number</label>
+             <input placeholder="+44 7900 000 000" className="mt-1 input-style" />
+           </div>
+          <div>
+              <label className="text-gray-300"  htmlFor="email">Email Address</label>
+              <input placeholder="Your Email" className="mt-1 input-style" />
+          </div>
 
-            <textarea
-              placeholder="Additional Requirements - Luggage Or Physical Items"
-              className="input-style sm:col-span-2"
-              rows={3}
-            />
+     <div className="w-full col-span-1 space-y-2 sm:col-span-2">
+  <label className="block text-gray-300" htmlFor="requirements">
+    Additional Requirements
+  </label>
+  <textarea
+    placeholder="Additional Requirements - Luggage Or Physical Items"
+    className="w-full input-style"
+    rows={3}
+  />
+</div>
 
-            <textarea
-              placeholder="Message"
-              className="input-style sm:col-span-2"
-              rows={4}
-            />
+<div className="w-full col-span-1 space-y-2 sm:col-span-2">
+  <label className="block text-gray-300" htmlFor="message">
+    Message
+  </label>
+  <textarea
+    placeholder="Message"
+    className="w-full input-style"
+    rows={4}
+  />
+</div>
 
           </div>
 
@@ -101,5 +186,6 @@ export default function MakeEnquiryContact() {
         }
       `}</style>
     </section>
+  </div>
   );
 }
