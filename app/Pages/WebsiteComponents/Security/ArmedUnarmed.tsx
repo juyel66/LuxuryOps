@@ -10,7 +10,7 @@ import dividerMobile from "../../../../public/images/Container (23).svg";
 export default function ArmedUnarmed() {
   return (
     <div className="text-white bg-black font-cardo">
-      <section className="container px-4 py-20 mx-auto md:py-28">
+      <section className="container px-4 py-5 mx-auto md:py-10">
         
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
           
