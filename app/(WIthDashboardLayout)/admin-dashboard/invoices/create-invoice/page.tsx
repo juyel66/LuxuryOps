@@ -41,7 +41,7 @@ export default function CreateInvoice() {
   const total = subtotal + vat;
 
   return (
-    <div className="min-h-screen bg-[#07090D] text-white p-4 md:p-8">
+    <div className="min-h-screen bg-[#07090D] text-white mt-5">
       
       {/* HEADER */}
       <h1 className="mb-6 font-serif text-2xl md:text-3xl">
