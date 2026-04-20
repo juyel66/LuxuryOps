@@ -18,7 +18,7 @@ export default function OurFleetHome() {
         <div className="mb-16">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-10 h-px bg-[#7A8A9A]" />
-            <span className="text-2xl text-gray-400 md:text-3xl">04</span>
+            <span className="text-2xl text-[#7A8A9A] md:text-3xl font-cardo">04</span>
           </div>
 
           <h2 className="text-[34px] sm:text-[40px] lg:text-[44px] font-cardo italic mb-4">
