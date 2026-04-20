@@ -427,7 +427,7 @@ export default function HotelPartners() {
                 </button>
                 <button
                   type="submit"
-                  className="w-full py-3 text-sm font-semibold text-black transition-colors bg-yellow-500 rounded-lg hover:bg-yellow-600"
+                  className="w-full py-3 text-sm font-semibold text-white transition-colors bg-yellow-500 rounded-lg hover:bg-yellow-600"
                 >
                   {modalMode === "create" ? "SAVE" : "UPDATE"}
                 </button>
