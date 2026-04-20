@@ -14,7 +14,8 @@ export default function PrivacyPolicy() {
             {/* GOLD LINE */}
             <div className="w-10 h-[2px] bg-[#D4AF37] mb-4" />
 
-            {/* TITLE */}
+          <div className="bg-[radial-gradient(ellipse_at_center,_rgba(200,155,60,0.18)_0%,_rgba(200,155,60,0.12)_25%,_rgba(200,155,60,0.06)_45%,_rgba(11,15,23,0.9)_70%,_#000000_100%)] p-6 rounded-xl border border-[#1A1F2B]">
+              {/* TITLE */}
             <h2 className="mb-4 text-2xl leading-snug font-cardo md:text-3xl">
               {item.title}
             </h2>
@@ -23,6 +24,7 @@ export default function PrivacyPolicy() {
             <div className="space-y-2 text-sm leading-relaxed text-gray-400">
               {item.content}
             </div>
+          </div>
           </div>
         ))}
 
