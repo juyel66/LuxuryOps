@@ -95,7 +95,7 @@ export default function CreateBookingForm() {
                 <button
                   type="button"
                   onClick={addDriverRow}
-                  className="flex items-center gap-1 px-3 py-2 text-xs text-black bg-yellow-500 rounded-md h-[38px] hover:bg-yellow-600 transition-colors"
+                  className="flex items-center gap-1 px-3 py-2 text-xs text-white bg-yellow-500 rounded-md h-[38px] hover:bg-yellow-600 transition-colors"
                 >
                   <Plus size={12} /> Add Car
                 </button>
