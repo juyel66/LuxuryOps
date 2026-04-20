@@ -40,6 +40,7 @@ const bookings = [
   {
     id: "#248",
     name: "Mr. A. Smith",
+    slug: "mr-a-smith",
     vehicle: "Range Rover Vogue",
     pickup: "Harrods, Knightsbridge",
     dropoff: "Heathrow Airport",
@@ -49,6 +50,7 @@ const bookings = [
   {
     id: "#249",
     name: "Ms. R. Johnson",
+    slug: "ms-r-johnson",
     vehicle: "Mercedes S-Class",
     pickup: "Mayfair Hotel",
     dropoff: "Gatwick Airport",
@@ -58,6 +60,7 @@ const bookings = [
   {
     id: "#250",
     name: "Mr. K. Williams",
+    slug: "mr-k-williams",
     vehicle: "Rolls-Royce Ghost",
     pickup: "Chelsea Harbour",
     dropoff: "Stansted Airport",
@@ -67,6 +70,7 @@ const bookings = [
   {
     id: "#251",
     name: "Lady Hartfield",
+    slug: "lady-hartfield",
     vehicle: "Bentley Bentayga",
     pickup: "Knightsbridge",
     dropoff: "Private Residence",
@@ -76,6 +80,7 @@ const bookings = [
   {
     id: "#252",
     name: "Mr. T. Brown",
+    slug: "mr-t-brown",
     vehicle: "Range Rover Sport",
     pickup: "Canary Wharf",
     dropoff: "Luton Airport",
@@ -85,6 +90,7 @@ const bookings = [
   {
     id: "#253",
     name: "Mrs. E. Carter",
+    slug: "mrs-e-carter",
     vehicle: "BMW 7 Series",
     pickup: "Westminster",
     dropoff: "Heathrow Airport",
@@ -94,6 +100,7 @@ const bookings = [
   {
     id: "#254",
     name: "Mr. D. Green",
+    slug: "mr-d-green",
     vehicle: "Mercedes V-Class",
     pickup: "Belgravia",
     dropoff: "Central London",
@@ -103,6 +110,8 @@ const bookings = [
   {
     id: "#255",
     name: "Ms. L. White",
+    slug: "ms-l-white",
+
     vehicle: "Audi A8",
     pickup: "Mayfair",
     dropoff: "Private Jet Terminal",
@@ -135,7 +144,7 @@ export default function BookingsManagement() {
         <div>
           <h1 className="text-2xl font-semibold">Bookings Management</h1>
           <p className="text-sm text-gray-400">
-            Record all driver jobs — Colony Club Barbados
+            Record all driver jobs — Colony Club Barbados.
           </p>
         </div>
 
@@ -208,12 +217,13 @@ export default function BookingsManagement() {
           )}
 
           <button className="flex items-center gap-2 px-4 py-2 text-sm text-gray-400 border border-gray-400 rounded-lg bg-[#111]">
-            <Image src={moreFilter} alt="More filters" width={14} height={14} />
+            <Image src={exportIcon} alt="Export" width={14} height={14} />
             More Filters
           </button>
 
           <button className="flex items-center gap-2 px-4 py-2 text-sm text-gray-400 border border-gray-400 rounded-lg bg-[#111]">
-            <Image src={exportIcon} alt="Export" width={14} height={14} />
+            
+            <Image src={moreFilter} alt="More filters" width={14} height={14} />
             Export
           </button>
         </div>
@@ -309,12 +319,12 @@ export default function BookingsManagement() {
                         >
                           Delete
                         </button>
-                        <button
+                        <Link href={`/admin-dashboard/bookings/${item.slug}`}
                           type="button"
                           className="w-full px-4 py-2 text-left text-sm text-gray-400 transition hover:bg-[#1a1a1a] hover:text-white"
                         >
                           View Details
-                        </button>
+                        </Link>
                       </div>
                     )}
                   </td>
