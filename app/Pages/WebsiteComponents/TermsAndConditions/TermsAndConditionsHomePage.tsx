@@ -23,7 +23,7 @@ export default function TermsAndConditionsHomePage() {
         <div className="container flex items-center justify-between w-full mx-auto">
    
           <div className="container mx-auto">
-            <p className="mb-4 text-lg font-bold text-gray-700">
+            <p className="mb-4 text-lg font-bold text-gray-500">
               — VVIP Terms & Conditions 
             </p>
             <h2 className="md:hidden text-[32px] sm:text-[42px] lg:text-[56px] leading-[1.2] font-cardo italic mb-6">
