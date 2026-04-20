@@ -36,7 +36,8 @@ const VVIPLuxuryService = () => {
       <div className="container mx-auto">
 
         <div className="flex items-center gap-3 mb-2">
-            <span className="text-gray-400 md:text-3xl text-2xl">— 02</span>
+           <div className="w-10 h-px bg-[#7A8A9A]" />
+            <span className="text-2xl text-[#7A8A9A] md:text-3xl font-cardo">02</span>
           </div>
 
         <h2 className="font-cardo italic text-[32px] sm:text-[42px] md:text-[56px] leading-[116%] mb-6">
@@ -44,8 +45,11 @@ const VVIPLuxuryService = () => {
           Services
         </h2>
 
-        <p className="text-gray-400 max-w-xl text-sm sm:text-base leading-relaxed mb-8">
-          Our diverse fleet and committed team empowers us to deliver a comprehensive suite of luxury transportation services.
+        <p className="hidden max-w-xl mb-8 text-sm leading-relaxed text-gray-400 md:flex sm:text-base">
+          Our diverse fleet and committed team empowers us to deliver a <br /> comprehensive suite of luxury transportation services.
+        </p>
+        <p className="max-w-xl mb-8 text-sm leading-relaxed text-gray-400 md:hidden sm:text-base">
+          Our diverse fleet and committed team empowers us to deliver a  comprehensive suite of luxury transportation services.
         </p>
 
       <div className="mt-6 sm:mt-8">
@@ -59,12 +63,12 @@ const VVIPLuxuryService = () => {
       </div>
 
       {/* CARDS */}
-      <div className="container mx-auto mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="container grid grid-cols-1 gap-6 mx-auto mt-14 sm:grid-cols-2 lg:grid-cols-3">
 
         {services.map((item, index) => (
           <div
             key={index}
-            className="relative group overflow-hidden"
+            className="relative overflow-hidden group"
           >
 
             {/* IMAGE */}
@@ -75,14 +79,14 @@ const VVIPLuxuryService = () => {
             />
 
             {/* OVERLAY */}
-            <div className="absolute inset-0  transition" />
+            <div className="absolute inset-0 transition" />
 
             {/* CONTENT */}
-            <div className="absolute bottom-0 p-6 z-10">
-              <h3 className="font-cardo  italic text-2xl mb-2">
+            <div className="absolute bottom-0 z-10 p-6">
+              <h3 className="mb-2 text-2xl italic font-cardo">
                 {item.title}
               </h3>
-              <p className="text-sm text-gray-300 leading-relaxed line-clamp-4">
+              <p className="text-sm leading-relaxed text-gray-300 line-clamp-4">
                 {item.desc}
               </p>
             </div>
