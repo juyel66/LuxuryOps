@@ -59,7 +59,7 @@ export default function ContactSubmissions() {
   const [selected, setSelected] = useState<Contact | null>(null);
 
   return (
-    <div className="min-h-screen bg-[#07090D] text-white p-4 md:p-8">
+    <div className="min-h-screen bg-[#07090D] text-white mt-5">
       
       {/* HEADER */}
       <div className="flex flex-col gap-4 mb-6 md:flex-row md:items-center md:justify-between">
