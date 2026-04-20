@@ -11,6 +11,7 @@ import {
   CheckCircle,
   CarIcon,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function DriverDashboard() {
   return (
@@ -39,9 +40,9 @@ export default function DriverDashboard() {
         <div className="space-y-4">
           <div className="flex items-center justify-between">
             <h2 className="text-lg font-medium">Today's Schedule</h2>
-            <button className="bg-[#C89B3C] text-white px-4 py-2 rounded-md text-sm">
+            <Link href="/driver-dashboard/overview/submitJob" className="bg-[#C89B3C] text-white px-4 py-2 rounded-md text-sm">
               + Submit New Job
-            </button>
+            </Link>
           </div>
 
           {/* Card */}
