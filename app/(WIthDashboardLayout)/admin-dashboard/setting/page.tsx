@@ -272,7 +272,7 @@ export default function SettingsTabsPage() {
 
     {/* Button */}
     <div className="pt-2">
-      <button className="bg-[#C89B3C] text-black text-[14px] px-5 py-[10px] rounded-md font-medium hover:opacity-90">
+      <button className="bg-[#C89B3C] text-white text-[14px] px-5 py-[10px] rounded-md font-medium hover:opacity-90">
         Update Password
       </button>
     </div>
