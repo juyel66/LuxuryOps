@@ -87,7 +87,7 @@ const services: Service[] = [
 
 export default function ServicesManagement() {
   return (
-    <div className="min-h-screen bg-[#07090D] text-white p-4 md:p-8">
+    <div className="min-h-screen bg-[#07090D] text-white mt-5">
 
       {/* HEADER */}
       <div className="flex items-center justify-between mb-6">
