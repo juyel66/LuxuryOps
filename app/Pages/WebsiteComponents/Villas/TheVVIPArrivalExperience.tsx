@@ -27,12 +27,12 @@ export default function TheVVIPArrivalExperience() {
         </div>
 
          
-          <h2 className="font-serif text-3xl leading-tight md:text-5xl">
+          <h2 className="font-serif text-3xl leading-tight md:text-5xl ">
             The VVIP Arrival Experience
           </h2>
 
        
-          <div className="max-w-xl space-y-4 text-sm leading-relaxed text-gray-400 md:text-base">
+          <div className="max-w-xl space-y-4 text-sm leading-relaxed text-gray-400 md:text-base ">
             <p>
               For many of our clients, the Barbados journey begins long before they arrive at their villa.
             </p>
