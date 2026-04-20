@@ -260,7 +260,7 @@ export default function ServiceCard() {
                 </Link>
 
                 <Link
-                  href="#"
+                  href="/book-now"
                   className="inline-flex items-center gap-3 bg-[#D4AF37] px-7 py-3 text-xs tracking-wider uppercase text-white transition-all duration-300 hover:opacity-90"
                 >
                   Book Now
