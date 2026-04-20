@@ -4,7 +4,7 @@ import RevenueChartAndUpComming from "@/app/Pages/DashboardComponent/AdminCompon
 
 const page = () => {
   return (
-    <div className="container mx-auto text-white ">
+    <div className="text-white ">
      <OverviewCard />
      <RevenueChartAndUpComming />
      <DriverAndRecentActivity />
