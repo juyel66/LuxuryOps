@@ -18,16 +18,20 @@ type Fleet = {
   passengers: number;
   ac: number;
   features: string[];
+  wifi: number;
+  slug: string;
 };
 
 const fleetData: Fleet[] = [
   {
     id: 1,
     name: "Mercedes Maybach Landjet",
+    slug: "mercedes-maybach-landjet",
     image: car1,
     tag: "Executive Sedan",
     doors: 5,
     passengers: 4,
+    wifi: 1,
     ac: 1,
     features: [
       "32” Samsung Frame TV With Motorised TV Lift",
@@ -38,7 +42,9 @@ const fleetData: Fleet[] = [
   {
     id: 2,
     name: "Range Rover Vogue",
+    slug: "range-rover-vogue",
     image: car2,
+    wifi:1,
     tag: "Executive Sedan",
     doors: 5,
     passengers: 4,
@@ -52,9 +58,11 @@ const fleetData: Fleet[] = [
   {
     id: 3,
     name: "Range Rover Sport",
+    slug: "range-rover-sport",
     image: car1,
     doors: 5,
     passengers: 4,
+    wifi:1,
     ac: 1,
     features: [
       "Automatic Climate Control and Air Quality Control System",
@@ -65,9 +73,11 @@ const fleetData: Fleet[] = [
   {
     id: 4,
     name: "Luxury 13 Seater Van",
+    slug: "luxury-13-seater-van",
     image: car2,
     doors: 4,
     passengers: 13,
+    wifi:1,
     ac: 1,
     features: [
       "13 Passenger Seating",
@@ -134,6 +144,10 @@ export default function OurFleetCard() {
                   <span className="block text-base font-semibold text-center">{car.passengers}</span>
                   <span className="text-xs text-[#9CA3AF]">Passengers</span>
                 </div>
+                <div>
+                  <span className="block text-base font-semibold text-center">{car.wifi}</span>
+                  <span className="text-xs text-[#9CA3AF]">Wi-fI</span>
+                </div>
 
                 <div>
                   <span className="block text-base font-semibold text-center">{car.ac}</span>
@@ -157,7 +171,7 @@ export default function OurFleetCard() {
               {/* BUTTON (YOUR FIXED STYLE) */}
               <div className="mt-6">
                 <Link
-                  href="/our-fleet/details"
+                  href={`/our-fleet/${car.slug}`}
                   className="inline-flex items-center gap-3 border border-white px-5 py-2 text-xs tracking-wider  uppercase transition-all duration-300 hover:bg-[#D4AF37]"
                 >
                   INFO
