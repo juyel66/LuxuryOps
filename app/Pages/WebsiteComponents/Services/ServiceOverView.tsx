@@ -70,7 +70,7 @@ export default function ServiceOverview() {
                 `}
               >
                 {/* BACK CARD */}
-                <div className="absolute top-3 right-3 w-full h-full rounded-2xl border border-[#D4AF37]/20 opacity-70" />
+                <div className="absolute top-3 right-3 w-full h-full rounded-2xl bg-[#D4AF37]/4 border border-[#D4AF37]/20 opacity-70" />
 
                 {/* MAIN CARD */}
                 <div className="relative flex flex-col h-full p-5 border rounded-2xl md:p-6 backdrop-blur-xl bg-white/5 border-white/10">
