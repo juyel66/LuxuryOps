@@ -23,13 +23,18 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
+  
+
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
     return pathname.startsWith(href);
   };
 
+
+  
+
   return (
-    <header className="w-full lg:fixed lg:top-0 lg:left-0 z-50 flex justify-center py-2 lg:py-4 px-3 sm:px-4 lg:px-0 bg-[#121212] lg:bg-transparent transition-all duration-300">
+    <header className="w-full  lg:top-0 lg:left-0 z-50 flex justify-center py-2  px-3 sm:px-4 lg:px-0 bg-[#121212] lg:bg-transparent transition-all duration-300">
       <div className="container w-full mx-auto">
 
         {/* NAVBAR */}
