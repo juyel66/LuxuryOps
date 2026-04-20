@@ -128,7 +128,7 @@ export default function BookingsManagement() {
   }, [selectedStatus]);
 
   return (
-    <div className="p-4 space-y-6 text-white sm:p-6">
+    <div className="mt-5 space-y-6 text-white">
       
    
       <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
