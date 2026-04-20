@@ -54,7 +54,7 @@ const properties = [
 
 export default function FeaturedAccommodation() {
   return (
-    <section className="py-20 text-white bg-black md:py-28">
+    <section className="py-10 text-white bg-black md:py-28">
       <div className="container px-4 mx-auto">
         
         <div className="flex flex-col gap-6 mb-12 md:flex-row md:items-center md:justify-between">
