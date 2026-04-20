@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 
 import img1 from "../../../../public/images/Main Image.svg";
-import img2 from "../../../../public/images/Thumb 1.svg";
+import img2 from "../../../../public/images/car.png";
 import img3 from "../../../../public/images/Main Image.svg";
-import img4 from "../../../../public/images/Main Image.svg";
-import img5 from "../../../../public/images/Thumb 1.svg";
+import img4 from "../../../../public/images/car3.png";
+import img5 from "../../../../public/images/card4.png";
 import img6 from "../../../../public/images/Main Image.svg";
-import img7 from "../../../../public/images/Thumb 1.svg";
+import img7 from "../../../../public/images/car3.png";
 
 const images = [img1, img2, img3, img4, img5, img6, img7];
 
