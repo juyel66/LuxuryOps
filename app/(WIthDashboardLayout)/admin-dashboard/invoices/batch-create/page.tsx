@@ -35,7 +35,7 @@ export default function BatchCreate() {
   const total = invoices.reduce((acc, i) => acc + i.amount, 0);
 
   return (
-    <div className="min-h-screen bg-[#07090D] text-white p-4 md:p-8">
+    <div className="min-h-screen bg-[#07090D] text-white mt-5">
 
       {/* HEADER */}
       <h1 className="mb-2 font-serif text-3xl">Batch Invoice Creator</h1>
