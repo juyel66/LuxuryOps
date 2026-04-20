@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import car1 from "../../../../public/images/Component 16.svg";
+import car1 from "../../../../public/images/VehicleDetailPage.svg";
 import car2 from "../../../../public/images/Component 16.svg";
 import car3 from "../../../../public/images/Component 16.svg";
 
