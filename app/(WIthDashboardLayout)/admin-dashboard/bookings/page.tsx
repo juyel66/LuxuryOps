@@ -307,12 +307,12 @@ export default function BookingsManagement() {
 
                     {activeActionMenu === i && (
                       <div className="absolute right-4 top-12 z-20 w-44 overflow-hidden rounded-lg border border-[#1f1f1f] bg-[#111] shadow-lg">
-                        <button
+                        <Link href="/admin-dashboard/bookings/edit-booking"
                           type="button"
                           className="w-full px-4 py-2 text-left text-sm text-gray-400 transition hover:bg-[#1a1a1a] hover:text-white"
                         >
                           Edit Booking
-                        </button>
+                        </Link>
                         <button
                           type="button"
                           className="w-full px-4 py-2 text-left text-sm text-red-400 transition hover:bg-[#1a1a1a] hover:text-red-300"
