@@ -20,10 +20,10 @@ export default function DriverDashboard() {
         {/* Header */}
         <div>
           <h1 className="text-2xl font-semibold">
-            Welcome back, Marcus Thompson
+            My Schedule
           </h1>
           <p className="text-sm text-gray-400">
-            Submit your daily jobs and track your earnings
+            View and manage your upcoming trips
           </p>
         </div>
 
