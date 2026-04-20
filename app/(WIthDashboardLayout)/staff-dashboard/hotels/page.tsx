@@ -255,7 +255,7 @@ export default function HotelPartners() {
               onClick={() => setFilter(item)}
               className={`px-4 py-2 rounded-lg text-sm ${
                 filter === item
-                  ? "bg-yellow-500 text-black"
+                  ? "bg-yellow-500 text-white"
                   : "bg-[#111] text-gray-400"
               }`}
             >
@@ -427,7 +427,7 @@ export default function HotelPartners() {
                 </button>
                 <button
                   type="submit"
-                  className="w-full py-3 text-sm font-semibold text-black transition-colors bg-yellow-500 rounded-lg hover:bg-yellow-600"
+                  className="w-full py-3 text-sm font-semibold text-white transition-colors bg-yellow-500 rounded-lg hover:bg-yellow-600"
                 >
                   {modalMode === "create" ? "SAVE" : "UPDATE"}
                 </button>
@@ -468,7 +468,7 @@ export default function HotelPartners() {
               <button
                 type="button"
                 onClick={() => openEditModal(selectedHotel)}
-                className="w-full py-3 text-sm font-semibold text-black transition-colors bg-yellow-500 rounded-lg hover:bg-yellow-600"
+                className="w-full py-3 text-sm font-semibold text-white transition-colors bg-yellow-500 rounded-lg hover:bg-yellow-600"
               >
                 Edit Hotel
               </button>
