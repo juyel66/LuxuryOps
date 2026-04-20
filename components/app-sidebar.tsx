@@ -48,16 +48,37 @@ import {
 import Image from "next/image";
 import { FaDollarSign } from "react-icons/fa";
 
-type SidebarLink = {
+interface SidebarIconProps {
+  className?: string;
+  style?: CSSProperties;
+}
+
+interface SidebarLink {
   title: string;
-  icon?: ComponentType<{ className?: string; style?: CSSProperties }>;
+  icon?: ComponentType<SidebarIconProps>;
   url?: string;
-};
+}
+
+interface SidebarSectionItem {
+  section: string;
+}
+
+interface SidebarDividerItem {
+  type: "divider";
+}
+
+interface SidebarGroupItem extends SidebarLink {
+  children?: SidebarLink[];
+}
+
+interface SidebarGroupItemWithChildren extends SidebarGroupItem {
+  children: SidebarLink[];
+}
 
 type SidebarItem =
-  | { section: string }
-  | { type: "divider" }
-  | (SidebarLink & { children?: SidebarLink[] });
+  | SidebarSectionItem
+  | SidebarDividerItem
+  | SidebarGroupItem;
 
 const adminItems: SidebarItem[] = [
   { section: "MAIN" },
@@ -114,7 +135,7 @@ const adminItems: SidebarItem[] = [
 ];
 
 
-const staffItem = [
+const staffItem: SidebarItem[] = [
   { section: "STAFF" },
   { title: "Overview", icon: Home, url: "/staff-dashboard/overview" },
   { title: "Bookings", icon: Calendar, url: "/staff-dashboard/bookings" },
@@ -126,7 +147,7 @@ const staffItem = [
 
 
 
-const driversItems = [
+const driversItems: SidebarItem[] = [
   
   { section: "DRIVER" },
   { title: "Overview", icon: Home, url: "/driver-dashboard/overview" },
@@ -141,7 +162,7 @@ const driversItems = [
 
 
 
-const userItems = [
+const userItems: SidebarItem[] = [
   { section: "USER" },
   { title: "Overview", icon: Home, url: "/user-dashboard/overview" },
   { title: "My Bookings", icon: Calendar, url: "/user-dashboard/my-bookings" },
@@ -172,7 +193,7 @@ export function AppSidebar({ isAdmin = false }: { isAdmin?: boolean }) {
 
       if (
         "children" in item &&
-        item.children?.some((child) => child.url && pathname.startsWith(child.url))
+        item.children?.some((child: SidebarLink) => child.url && pathname.startsWith(child.url))
       ) {
         nextOpenGroups[item.title] = true;
       }
@@ -185,16 +206,16 @@ export function AppSidebar({ isAdmin = false }: { isAdmin?: boolean }) {
     () => defaultOpenGroups
   );
 
-  const isSectionItem = (item: SidebarItem): item is { section: string } =>
+  const isSectionItem = (item: SidebarItem): item is SidebarSectionItem =>
     "section" in item;
 
-  const isDividerItem = (item: SidebarItem): item is { type: "divider" } =>
+  const isDividerItem = (item: SidebarItem): item is SidebarDividerItem =>
     "type" in item && item.type === "divider";
 
   const isGroupItem = (
     item: SidebarItem
-  ): item is SidebarLink & { children: SidebarLink[] } =>
-    !isSectionItem(item) && !isDividerItem(item) && Array.isArray((item as SidebarLink & { children?: SidebarLink[] }).children);
+  ): item is SidebarGroupItemWithChildren =>
+    !isSectionItem(item) && !isDividerItem(item) && Array.isArray((item as SidebarGroupItem).children);
 
   return (
     <Sidebar className="pr-2 bg-black ">
