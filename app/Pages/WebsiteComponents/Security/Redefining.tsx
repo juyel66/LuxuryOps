@@ -16,7 +16,7 @@ export default function Redefining() {
           {/* LEFT */}
           <div>
             {/* Small Divider Line */}
-            <div className="w-10 h-[2px] bg-[#D4AF37] mb-6" />
+            <div className="w-10 h-[2px] bg-[#D4AF37]/70 mb-6" />
 
             {/* Heading */}
             <h2 className="mb-4 text-3xl leading-tight md:text-5xl font-cardo ">
