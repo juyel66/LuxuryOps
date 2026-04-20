@@ -95,7 +95,7 @@ export default function EntityManagement() {
               key={tab}
               className={`px-4 py-2 rounded-lg text-sm ${
                 tab === "All"
-                  ? "bg-yellow-500 text-black"
+                  ? "bg-yellow-500 text-white"
                   : "bg-[#111] text-gray-400"
               }`}
             >
@@ -149,7 +149,7 @@ export default function EntityManagement() {
             <button className="w-full py-3 text-yellow-500 border border-yellow-500">
               CANCEL
             </button>
-            <button className="w-full py-3 text-black bg-yellow-500">
+            <button className="w-full py-3 text-white bg-yellow-500">
               SAVE
             </button>
           </div>
@@ -202,7 +202,7 @@ export default function EntityManagement() {
             <button className="w-full py-3 text-yellow-500 border border-yellow-500">
               CANCEL
             </button>
-            <button className="w-full py-3 text-black bg-yellow-500">
+            <button className="w-full py-3 text-white bg-yellow-500">
               SAVE
             </button>
           </div>
