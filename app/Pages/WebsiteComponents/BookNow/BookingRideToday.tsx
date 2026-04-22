@@ -18,7 +18,7 @@ export default function BookRideToday() {
         src={bgCar}
         alt="car"
         fill
-        className="object-cover"
+        className="object-cover object-center "
       />
 
       {/* DARK OVERLAY */}
@@ -45,52 +45,89 @@ export default function BookRideToday() {
         {/* FORM */}
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
 
-          {/* FIRST ROW */}
-          <input placeholder="First Name" className="input-style" />
-          <input placeholder="Last Name" className="input-style" />
+  {/* FIRST NAME */}
+  <div>
+    <label className="block mb-2 text-white">First Name</label>
+    <input placeholder="First Name" className="input-style" />
+  </div>
 
-          <input placeholder="+44 7900 000 000" className="input-style" />
-          <input placeholder="Your Email" className="input-style" />
+  {/* LAST NAME */}
+  <div>
+    <label className="block mb-2 text-white">Last Name</label>
+    <input placeholder="Last Name" className="input-style" />
+  </div>
 
-          {/* SELECT */}
-          <div className="relative md:col-span-2">
-            <input
-              placeholder="Mercedes S Class"
-              className="pr-10 input-style"
-            />
-            <span className="icon-wrap">
-              <Image src={dropdownIcon} alt="" className="icon-image" />
-            </span>
-          </div>
+  {/* MOBILE NUMBER */}
+  <div>
+    <label className="block mb-2 text-white">Mobile Number</label>
+    <input placeholder="+44 7900 000 000" className="input-style" />
+  </div>
 
-          {/* DATE */}
-          <div className="relative">
-            <input placeholder="Choose Date" className="pr-10 input-style" />
-            <span className="icon-wrap">
-              <Image src={calendarIcon} alt="" className="icon-image" />
-            </span>
-          </div>
+  {/* EMAIL */}
+  <div>
+    <label className="block mb-2 text-white">Your Email</label>
+    <input placeholder="Your Email" className="input-style" />
+  </div>
 
-          {/* TIME */}
-          <div className="relative">
-            <input placeholder="Choose Time" className="pr-10 input-style" />
-            <span className="icon-wrap">
-              <Image src={clockIcon} alt="" className="icon-image" />
-            </span>
-          </div>
+  {/* SELECT */}
+  <div className="md:col-span-2">
+    <label className="block mb-2 text-white">Choose Car</label>
+    <div className="relative">
+      <input
+        placeholder="Mercedes S Class"
+        className="pr-10 input-style"
+      />
+      <span className="icon-wrap">
+        <Image src={dropdownIcon} alt="" className="icon-image" />
+      </span>
+    </div>
+  </div>
 
-          {/* LOCATION */}
-          <input placeholder="Enter the pick address" className="input-style" />
-          <input placeholder="Enter the final destination" className="input-style" />
+  {/* DATE */}
+  <div>
+    <label className="block mb-2 text-white">Choose Date</label>
+    <div className="relative">
+      <input placeholder="Choose Date" className="pr-10 input-style" />
+      <span className="icon-wrap">
+        <Image src={calendarIcon} alt="" className="icon-image" />
+      </span>
+    </div>
+  </div>
 
-          {/* TEXTAREA */}
-          <textarea
-            placeholder="Additional Requirements - Luggage Or Physical Items"
-            className="input-style md:col-span-2"
-            rows={3}
-          />
+  {/* TIME */}
+  <div>
+    <label className="block mb-2 text-white">Choose Time</label>
+    <div className="relative">
+      <input placeholder="Choose Time" className="pr-10 input-style" />
+      <span className="icon-wrap">
+        <Image src={clockIcon} alt="" className="icon-image" />
+      </span>
+    </div>
+  </div>
 
-        </div>
+  {/* PICK UP */}
+  <div>
+    <label className="block mb-2 text-white">Pick Up</label>
+    <input placeholder="Enter the pick address" className="input-style" />
+  </div>
+
+  {/* DROP OFF */}
+  <div>
+    <label className="block mb-2 text-white">Drop Off</label>
+    <input placeholder="Enter the final destination" className="input-style" />
+  </div>
+
+  {/* TEXTAREA */}
+  <div className="md:col-span-2">
+    <label className="block mb-2 text-white">Additional Requirements</label>
+    <textarea
+      placeholder="Additional Requirements - Luggage Or Physical Items"
+      className="input-style"
+      rows={3}
+    />
+  </div>
+
+</div>
 
         {/* BUTTON */}
         <button className="mt-6 w-full bg-[#D4AF37] text-white py-4 uppercase tracking-wider text-sm flex items-center justify-center gap-2 hover:opacity-90 transition">
