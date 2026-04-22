@@ -7,6 +7,7 @@ import Link from "next/link";
 import img1 from "../../../../public/images/ImageWithFallback (2).svg";
 import img2 from "../../../../public/images/ImageWithFallback.svg";
 import img3 from "../../../../public/images/ImageWithFallback (1).svg";
+import arrow from "../../../../public/images/Component 3 (1).svg";
 
 const data = [
   {
@@ -35,7 +36,7 @@ const data = [
 
 export default function YouMayAlsoLike() {
   return (
-    <div className="text-white bg-black font-cardo">
+    <div className="text-white bg-[#121212] font-cardo">
       <section className="container px-4 py-10 mx-auto md:py-10">
         
         {/* Header */}
@@ -45,10 +46,12 @@ export default function YouMayAlsoLike() {
           </h2>
 
           <Link
-            href="#"
+            href="/services"
             className="text-sm text-[#D4AF37] hover:underline"
           >
-            View All Villas +
+            <div className="flex items-center">
+              View All Services <Image src={arrow} alt="arrow" className="w-4 h-4 ml-1" />
+            </div>
           </Link>
         </div>
 
