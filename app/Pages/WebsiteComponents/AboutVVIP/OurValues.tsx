@@ -34,7 +34,7 @@ export default function OurValues() {
 
           <div>
             <h3 className="text-[#D4AF37] text-2xl sm:text-3xl font-semibold">
-              5.3M
+              5.3M+
             </h3>
             <p className="text-[#9CA3AF] text-xs sm:text-sm mt-2">
               Kilometres Driven
@@ -70,7 +70,7 @@ export default function OurValues() {
           <div className="grid grid-cols-1 gap-8 font-cardo md:grid-cols-2 lg:grid-cols-3">
             
             {/* CARD 1 */}
-            <div className="p-8 text-center border border-white/10 rounded-xl bg-white/5 backdrop-blur-md">
+            <div className="p-8 text-center border hover:scale-105 border-white/10 rounded-xl bg-white/5 backdrop-blur-md">
               <Image src={image1} alt="icon" className="w-10 h-10 mx-auto mb-4" />
 
               <h3 className="mb-3 font-serif text-lg">
@@ -84,7 +84,7 @@ export default function OurValues() {
             </div>
 
             {/* CARD 2 */}
-            <div className="p-8 text-center border border-white/10 rounded-xl bg-white/5 backdrop-blur-md">
+            <div className="p-8 text-center border hover:scale-105 border-white/10 rounded-xl bg-white/5 backdrop-blur-md">
              <Image src={image2} alt="icon" className="w-10 h-10 mx-auto mb-4" />
 
               <h3 className="mb-3 font-serif text-lg">
@@ -101,7 +101,7 @@ export default function OurValues() {
            
 
             {/* CARD 3 */}
-            <div className="p-8 text-center border border-white/10 rounded-xl bg-white/5 backdrop-blur-md">
+            <div className="p-8 text-center border hover:scale-105 border-white/10 rounded-xl bg-white/5 backdrop-blur-md">
               <Image src={image3} alt="icon" className="w-10 h-10 mx-auto mb-4" />
 
               <h3 className="mb-3 font-serif text-lg">
