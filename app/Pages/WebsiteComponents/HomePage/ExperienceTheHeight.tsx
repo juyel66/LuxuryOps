@@ -27,7 +27,7 @@ export default function ExperienceTheHeight() {
             <div className="container px-3 mx-auto">
               <div className="flex items-center gap-6 mb-4">
                 
-                <p className="text-[10px] uppercase   tracking-[0.35em] text-[#D4AF37]">
+                <p className="text-[10px] uppercase font-cardo   tracking-[0.35em] text-[#D4AF37]">
                   Luxury Chauffeured Transport · Barbados
                 </p>
               </div>
