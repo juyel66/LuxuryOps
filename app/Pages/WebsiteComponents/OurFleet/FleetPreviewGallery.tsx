@@ -85,7 +85,7 @@ export default function FleetPreviewGallery() {
               <div
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={`relative h-[90px] w-full shrink-0 overflow-hidden rounded-md border cursor-pointer transform-gpu transition-all duration-300 ${
+                className={`relative h-[100px] w-full shrink-0 overflow-hidden rounded-md border cursor-pointer transform-gpu transition-all duration-300 ${
                   activeIndex === index
                     ? " border-[#D4AF37] bg-white/4 shadow-[0_0_0_1px_rgba(212,175,55,0.2)]"
                     : "border-white/10 bg-white/2  hover:border-white/40 hover:bg-white/5"
