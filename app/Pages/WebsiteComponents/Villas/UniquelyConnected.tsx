@@ -25,7 +25,7 @@ export default function UniquelyConnected() {
           </div>
 
           {/* RIGHT */}
-          <div className="container mx-auto space-y-5 text-sm leading-relaxed text-gray-400 md:text-base">
+          <div className="container mx-auto space-y-5 text-sm leading-relaxed text-gray-400 md:text-base bg-[radial-gradient(circle_at_center,_rgba(212,175,55,0.18)_0%,_rgba(212,175,55,0.08)_45%,_transparent_65%)]">
             
             <p>
               Barbados remains one of the Caribbean’s most celebrated luxury destinations—an island defined by pristine coastlines, world-renowned estates, and an enduring culture of refined hospitality.
