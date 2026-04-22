@@ -53,7 +53,7 @@ const teamData: TeamMember[] = [
 
 const TeamCard = ({ member }: { member: TeamMember }) => {
   return (
-    <div className="flex font-cardo h-[450px] flex-col rounded-xl border border-[#172238] bg-[#0A0C12] p-6 text-center shadow-[0_0_0_1px_rgba(12,24,52,0.25)]">
+    <div className="flex font-cardo h-[450px] flex-col rounded-xl border border-[#172238] bg-[#121212] p-6 text-center shadow-[0_0_0_1px_rgba(12,24,52,0.25)]">
       
       {/* IMAGE */}
       <div className="relative mx-auto mb-5 overflow-hidden border rounded-full h-36 w-36 border-white/10">
