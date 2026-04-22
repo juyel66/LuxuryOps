@@ -14,7 +14,7 @@ export default function OurFleetVideoExperience() {
         {/* LEFT CONTENT */}
         <div>
           {/* TAG */}
-          <span className="text-[#D4AF37] bg-[#e4dbc1]/20 text-xs border border-[#D4AF37] px-3 py-1 rounded mb-4 inline-block">
+          <span className="text-[#D4AF37] uppercase bg-[#e4dbc1]/20 text-xs border border-[#D4AF37] px-3 py-1 rounded mb-4 inline-block">
             Luxury SUV
           </span>
 
