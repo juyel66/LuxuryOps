@@ -82,7 +82,7 @@ export default function AdminFleetDetailsFeature() {
         <h2 className="text-lg font-semibold">Features Tab</h2>
 
         {/* STATS */}
-        <div className="grid grid-cols-3 text-center border border-[#1f1f1f] rounded-lg py-4">
+        <div className="grid grid-cols-3  text-center border border-[#1f1f1f] rounded-lg py-4">
           <Spec value="5" label="Door" />
           <Spec value="4" label="People" />
           <Spec value="1" label="Aircondition" />
