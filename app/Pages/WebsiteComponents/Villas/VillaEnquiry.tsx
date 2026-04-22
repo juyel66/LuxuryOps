@@ -91,8 +91,47 @@ export default function VillaEnquiry() {
 
               <input type="text" placeholder="Phone Number" className="input-style sm:col-span-2" />
 
-              <input type="date" className="input-style" />
-              <input type="date" className="input-style" />
+<div className="relative group">
+  <input
+    type="date"
+    className="input-style pr-10 [&::-webkit-calendar-picker-indicator]:opacity-0 [&::-webkit-calendar-picker-indicator]:absolute [&::-webkit-calendar-picker-indicator]:right-0 [&::-webkit-calendar-picker-indicator]:w-full [&::-webkit-calendar-picker-indicator]:h-full [&::-webkit-calendar-picker-indicator]:cursor-pointer"
+  />
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="absolute w-5 h-5 text-gray-400 transition-opacity duration-200 -translate-y-1/2 opacity-0 pointer-events-none right-3 top-1/2 group-hover:opacity-100"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth="1.8"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+    />
+  </svg>
+</div>
+
+<div className="relative group">
+  <input
+    type="date"
+    className="input-style pr-10 [&::-webkit-calendar-picker-indicator]:opacity-0 [&::-webkit-calendar-picker-indicator]:absolute [&::-webkit-calendar-picker-indicator]:right-0 [&::-webkit-calendar-picker-indicator]:w-full [&::-webkit-calendar-picker-indicator]:h-full [&::-webkit-calendar-picker-indicator]:cursor-pointer"
+  />
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="absolute w-5 h-5 text-gray-400 transition-opacity duration-200 -translate-y-1/2 opacity-0 pointer-events-none right-3 top-1/2 group-hover:opacity-100"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth="1.8"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+    />
+  </svg>
+</div>
 
               <input type="number" placeholder="Number of Guests" className="input-style" />
               <input type="number" placeholder="Bedrooms" className="input-style" />
