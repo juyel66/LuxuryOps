@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -8,6 +9,7 @@ import { usePathname } from "next/navigation";
 import { FaStar } from "react-icons/fa";
 
 import { FreeMode } from "swiper/modules";
+import save from "../../../../public/images/savee.svg";
 
 type Testimonial = {
   id: number;
@@ -95,7 +97,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
     <div className="flex md:h-[200px] h-[200px] flex-col p-6 border border-white/10 rounded-xl bg-white/5 backdrop-blur-md">
       <p
-        className="mb-6  leading-[1.8] text-[#CFCFCF]"
+        className="mb-6 leading-[1.8] text-[#CFCFCF]"
         style={{
           display: "-webkit-box",
           WebkitLineClamp: 6,
@@ -127,30 +129,40 @@ export default function TestimonialHome() {
   const pathname = usePathname();
 
   return (
-    <section className="relative block w-full px-4 py-16 text-white bg-black md:py-24 font-cardo">
-      {/* BACKGROUND GLOW (like design) */}
+    <section className="relative block w-full px-4 py-16 overflow-hidden text-white bg-black md:py-24 font-cardo">
+      {/* SAVE IMAGE BACKGROUND */}
+      <Image
+        src={save}
+        alt="background shape"
+        fill
+        className=""
+      />
+
+      {/* BACKGROUND GLOW */}
       <div className="absolute top-0 left-1/2 w-[320px] h-80 -translate-x-1/2 bg-linear-to-br from-yellow-500/20 via-green-400/10 to-blue-500/20 blur-3xl opacity-30 pointer-events-none sm:left-1/3 sm:w-[400px] sm:h-[400px] sm:translate-x-0" />
 
       <div className="container relative z-10 mx-auto">
         {/* HEADER */}
         <div className="container mb-10">
-          
           <div
             className={`${
               pathname?.startsWith("/aboutvvip") ? "hidden" : "flex"
             } items-center gap-4 mb-4`}
           >
             <div className="w-10 h-px bg-[#7A8A9A]" />
-            <span className="text-2xl text-[#7A8A9A] md:text-3xl font-cardo">05</span>
+            <span className="text-2xl text-[#7A8A9A] md:text-3xl font-cardo">
+              05
+            </span>
           </div>
 
           <h2 className="text-[34px] sm:text-[40px] lg:text-[44px] font-cardo italic mb-4">
             Testimonials
           </h2>
 
-          <p className="text-[#9CA3AF] md:text-[17px]  leading-[1.9]">
+          <p className="text-[#9CA3AF] md:text-[17px] leading-[1.9]">
             At VVIP Luxury Chauffeured Services, we redefine luxury travel. Each
-            testimonial <br /> highlights our commitment to elegance and excellence.
+            testimonial <br /> highlights our commitment to elegance and
+            excellence.
           </p>
         </div>
 
