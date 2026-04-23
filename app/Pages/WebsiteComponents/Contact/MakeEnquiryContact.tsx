@@ -37,8 +37,8 @@ export default function MakeEnquiryContact() {
             Email
           </h3>
           <p className="text-[#A0A6B1] text-[15px] leading-7">
-            info@wipluxury.com <br />
-            bookings@wipluxury.com
+            info@vvipluxury.com <br />
+            bookings@vvipluxury.com
           </p>
         </div>
 
