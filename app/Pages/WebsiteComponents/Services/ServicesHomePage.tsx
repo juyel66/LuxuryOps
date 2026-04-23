@@ -42,7 +42,7 @@ export default function ServicesHomePage() {
           </div>
 
           {/* RIGHT SCROLL INDICATOR */}
-          <div className="flex-col items-center hidden gap-4 lg:flex">
+          <div className="flex-col items-center hidden animate-[bounce_2s_ease-in-out_infinite] gap-4 lg:flex">
             <span className="text-sm tracking-widest rotate-90 text-white/70">
               Scroll
             </span>
