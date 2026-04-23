@@ -36,13 +36,13 @@ const data = [
 
 export default function YouMayAlsoLike() {
   return (
-    <div className="text-white bg-[#121212] font-cardo">
+    <div className="text-white bg-[#0A0A0A] font-cardo">
       <section className="container px-4 py-10 mx-auto md:py-10">
         
         {/* Header */}
         <div className="flex items-center justify-between mb-10">
           <h2 className="text-2xl md:text-3xl font-cardo">
-            You May Also Like
+            You May Also Like 
           </h2>
 
           <Link
