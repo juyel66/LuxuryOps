@@ -9,7 +9,7 @@ import arrowUp from "../../../public/images/arrow-up-line.svg";
 const Footer = () => {
   return (
    <div>
-    <footer className="w-full px-4 py-2 text-white bg-black sm:px-6 md:px-6 ">
+    <footer className="w-full px-4 py-2 text-white bg-[#0A0A0A] sm:px-6 md:px-6 ">
       <div className="container relative mx-auto">
 
         {/* Back to top */}
