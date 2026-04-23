@@ -12,7 +12,7 @@ import img5 from "../../../../public/images/Container (22).svg";
 
 export default function ConciergeImage() {
   return (
-    <div className="text-white bg-black">
+    <div className="text-white bg-[#0A0A0A] font-cardo">
       <section className="container px-4 mx-auto md:py-20">
         
         {/* GRID */}
