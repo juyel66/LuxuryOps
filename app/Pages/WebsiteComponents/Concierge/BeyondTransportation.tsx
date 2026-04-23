@@ -6,7 +6,7 @@ export default function BeyondTransportation() {
       
       {/* 🔥 Right Side Gradient Glow */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute right-0 top-0 h-full w-[40%] bg-gradient-to-l from-[#D4AF37]/20 via-transparent to-transparent blur-2xl" />
+        <div className="absolute left-150 top-0 h-full w-[50%] rounded-full bg-gradient-to-l from-[#D4AF37]/20 via-transparent to-transparent blur-2xl" />
       </div>
 
       <section className="container relative z-10 px-4 py-20 mx-auto md:py-28">
