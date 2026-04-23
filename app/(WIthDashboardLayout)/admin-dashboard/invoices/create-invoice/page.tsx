@@ -5,35 +5,31 @@ import { Plus, Calendar } from "lucide-react";
 
 type Item = {
   description: string;
-  qty: number;
-  price: number;
+  qty: string;
+  price: string;
 };
 
 export default function CreateInvoice() {
   const [items, setItems] = useState<Item[]>([
-    { description: "", qty: 1, price: 250 },
+    { description: "", qty: "", price: "" },
   ]);
 
   const handleChange = (
     index: number,
     field: keyof Item,
-    value: string | number
+    value: string
   ) => {
     const updated = [...items];
-    if (field === "description") {
-      (updated[index] as any)[field] = value as string;
-    } else {
-      (updated[index] as any)[field] = Number(value);
-    }
+    (updated[index] as any)[field] = value;
     setItems(updated);
   };
 
   const addItem = () => {
-    setItems([...items, { description: "", qty: 1, price: 0 }]);
+    setItems([...items, { description: "", qty: "", price: "" }]);
   };
 
   const subtotal = items.reduce(
-    (acc, item) => acc + item.qty * item.price,
+    (acc, item) => acc + (Number(item.qty) || 0) * (Number(item.price) || 0),
     0
   );
 
@@ -55,20 +51,36 @@ export default function CreateInvoice() {
         </h2>
 
         <div className="grid gap-4 md:grid-cols-2">
-          <input
-            placeholder="Mr. John Smith"
-            className="bg-[#0B0F17] border border-[#1A1F2B] p-3 rounded-md text-sm"
-          />
-          <input
-            placeholder="john@example.com"
-            className="bg-[#0B0F17] border border-[#1A1F2B] p-3 rounded-md text-sm"
-          />
+          <div>
+            <label className="block mb-2 text-xs text-gray-400">
+              Customer Name
+            </label>
+            <input
+              placeholder="Mr. John Smith"
+              className="w-full bg-[#0B0F17] border border-[#1A1F2B] p-3 rounded-md text-sm"
+            />
+          </div>
+
+          <div>
+            <label className="block mb-2 text-xs text-gray-400">
+              Email Address
+            </label>
+            <input
+              placeholder="john@example.com"
+              className="w-full bg-[#0B0F17] border border-[#1A1F2B] p-3 rounded-md text-sm"
+            />
+          </div>
         </div>
 
-        <textarea
-          placeholder="123 Mayfair Street, London, W1J 5AB"
-          className="mt-4 w-full bg-[#0B0F17] border border-[#1A1F2B] p-3 rounded-md text-sm"
-        />
+        <div className="mt-4">
+          <label className="block mb-2 text-xs text-gray-400">
+            Billing Address
+          </label>
+          <textarea
+            placeholder="123 Mayfair Street, London, W1J 5AB"
+            className="w-full bg-[#0B0F17] border border-[#1A1F2B] p-3 rounded-md text-sm"
+          />
+        </div>
       </section>
 
       {/* INVOICE DETAILS */}
@@ -78,12 +90,29 @@ export default function CreateInvoice() {
         </h2>
 
         <div className="grid gap-4 md:grid-cols-3">
-          <InputWithIcon placeholder="Choose date" />
-          <InputWithIcon placeholder="Choose date" />
-          <input
-            placeholder="BK-001"
-            className="bg-[#0B0F17] border border-[#1A1F2B] p-3 rounded-md text-sm"
-          />
+          <div>
+            <label className="block mb-2 text-xs text-gray-400">
+              Invoice Date
+            </label>
+            <InputWithIcon placeholder="Choose date" />
+          </div>
+
+          <div>
+            <label className="block mb-2 text-xs text-gray-400">
+              Due Date
+            </label>
+            <InputWithIcon placeholder="Choose date" />
+          </div>
+
+          <div>
+            <label className="block mb-2 text-xs text-gray-400">
+              Booking Reference
+            </label>
+            <input
+              placeholder="BK-001"
+              className="w-full bg-[#0B0F17] border border-[#1A1F2B] p-3 rounded-md text-sm"
+            />
+          </div>
         </div>
       </section>
 
@@ -101,13 +130,19 @@ export default function CreateInvoice() {
         </div>
 
         {items.map((item, i) => {
-          const total = item.qty * item.price;
+          const total = (Number(item.qty) || 0) * (Number(item.price) || 0);
 
           return (
             <div
               key={i}
               className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-4"
             >
+              <label className="text-xs text-gray-400">
+                Description
+              </label>
+              <label className="text-xs text-gray-400">Qty</label>
+              <label  className="text-xs text-gray-400">Price($)</label>
+              <label className="text-xs text-gray-400">Total</label>
               <input
                 placeholder="Service description"
                 value={item.description}
@@ -119,8 +154,10 @@ export default function CreateInvoice() {
 
               <input
                 type="number"
+                placeholder="1"
                 value={item.qty}
                 onChange={(e) =>
+                  
                   handleChange(i, "qty", e.target.value)
                 }
                 className="bg-[#0B0F17] border border-[#1A1F2B] p-3 rounded-md text-sm"
@@ -128,6 +165,7 @@ export default function CreateInvoice() {
 
               <input
                 type="number"
+                placeholder="250"
                 value={item.price}
                 onChange={(e) =>
                   handleChange(i, "price", e.target.value)
@@ -164,12 +202,18 @@ export default function CreateInvoice() {
       </div>
 
       {/* NOTES */}
+      <label htmlFor="notes" className="block mb-2 text-sm font-medium text-gray-300">
+        Notes
+      </label>
       <textarea
         placeholder="Payment terms, additional information..."
         className="w-full bg-[#0B0F17] border border-[#1A1F2B] p-3 rounded-md text-sm mb-6"
       />
 
       {/* STATUS */}
+      <label htmlFor="status" className="block mb-2 text-sm font-medium text-gray-300">
+        Status
+      </label>
       <input
         placeholder="Paid"
         className="w-full bg-[#0B0F17] border border-[#1A1F2B] p-3 rounded-md text-sm mb-8"
