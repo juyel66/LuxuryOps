@@ -5,7 +5,7 @@ import img1 from "../../../../public/images/Container (36).svg";
 
 export default function TheVVIPSignatureJourney() {
   return (
-    <section className="px-3 py-10 text-white bg-black md:py-20">
+    <section className="px-3 py-10 text-white bg-[#000000] md:py-20">
       <div className="container grid items-center grid-cols-1 gap-16 mx-auto lg:grid-cols-2">
         
         {/* LEFT SIDE IMAGES */}
