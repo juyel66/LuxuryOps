@@ -72,8 +72,8 @@ export default function SecurityHeroSections() {
           </div>
 
           {/* RIGHT SCROLL INDICATOR */}
-          <div className="flex-col items-center hidden gap-4 lg:flex">
-            <span className="text-sm tracking-widest rotate-90 text-white/70">
+          <div className="flex-col items-center hidden gap-4 lg:flex animate-[bounce_2s_ease-in-out_infinite]">
+            <span className="text-sm tracking-widest rotate-90 text-white/70 ">
               Scroll
             </span>
             <div className="w-[1px] h-20 bg-white/40" />
