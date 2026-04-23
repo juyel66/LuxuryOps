@@ -8,13 +8,13 @@ import Image from "next/image";
 
 export default function OurValues() {
   return (
-    <section className="text-white bg-black">
+    <section className="text-white bg-[#121212]">
       
   
-      <div className="border border-white/10">
+      <div className=" font-cardo">
         <div className="container grid grid-cols-2 gap-8 px-4 py-12 mx-auto text-center sm:grid-cols-4">
           
-          <div>
+          <div className="">
             <h3 className="text-[#D4AF37] text-2xl sm:text-3xl font-semibold">
               10+
             </h3>
@@ -54,7 +54,7 @@ export default function OurValues() {
       </div>
 
       
-      <div className="px-4 py-24 ">
+      <div className="px-4 py-24  bg-[#0A0A0A]">
         <div className="container mx-auto text-center">
           
           {/* TITLE */}
