@@ -30,7 +30,7 @@ const services = [
 
 const VVIPLuxuryService = () => {
   return (
-    <section className="bg-[#0c0c0c] text-white py-16 md:py-24 px-4 ">
+    <section className="bg-[#0A0A0A] text-white py-16 md:py-24 px-4 ">
 
       {/* TOP CONTENT */}
       <div className="container mx-auto">
