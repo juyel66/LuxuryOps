@@ -58,14 +58,14 @@ export default function VillaDetailsKeyFeatures() {
           </div>
 
           {/* STATS */}
-          <div className="grid grid-cols-3 gap-4">
-            <div className="flex flex-col items-center justify-center stat-box">
+          <div className="grid grid-cols-3 gap-4 ">
+            <div className="flex flex-col items-center justify-center h-30 bg-[#131313] border border-[#333231] rounded-xl">
               <Image src={bedIcon} alt="" width={20} height={20} />
               <h3>6</h3>
               <p>Bedrooms</p>
             </div>
 
-            <div className="flex flex-col items-center justify-center stat-box">
+            <div className="flex flex-col items-center justify-center bg-[#131313] border border-[#333231] rounded-xl">
               <Image
                 src={bathIcon}
                 alt=""
@@ -77,7 +77,7 @@ export default function VillaDetailsKeyFeatures() {
               <p>Bathrooms</p>
             </div>
 
-            <div className="flex flex-col items-center justify-center stat-box">
+            <div className="flex flex-col items-center justify-center bg-[#131313] border border-[#333231] rounded-xl">
               <Image src={poolIcon} alt="" width={20} height={20} />
               <h3>2</h3>
               <p>Pool(s)</p>
@@ -137,7 +137,7 @@ export default function VillaDetailsKeyFeatures() {
 
         {/* RIGHT FORM */}
         <div className="relative">
-          <div className="relative rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 via-white/0 to-white/5 backdrop-blur-xl p-6 space-y-6 shadow-[0_0_40px_rgba(0,0,0,0.8)]">
+          <div className="relative p-6 space-y-6 border rounded-2xl border-white/10 bg-[#131313] backdrop-blur-xl">
             <div>
               <p className="text-sm text-gray-400">From</p>
               <h2 className="text-4xl font-cardo">
