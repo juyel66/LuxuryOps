@@ -70,16 +70,16 @@ const HomePageHeroSections = () => {
       </div>
 
       
-      <div className="absolute inset-0 z-20 hidden mb-40 pointer-events-none md:block">
-        <div className="container flex items-end justify-end h-full px-4 pb-10 mx-auto sm:px-6 md:px-16">
-          <div className="flex flex-col items-center">
-            <span className="rotate-90 text-[10px] sm:text-xs tracking-widest text-gray-300 mb-4">
-              Scroll
-            </span>
-            <div className="w-px h-12 bg-gray-400 sm:h-16" />
-          </div>
-        </div>
-      </div>
+     <div className="absolute inset-0 z-20 hidden mb-40 pointer-events-none md:block">
+  <div className="container flex items-end justify-end h-full px-4 pb-10 mx-auto sm:px-6 md:px-16">
+    <div className="flex flex-col items-center animate-[bounce_2s_ease-in-out_infinite]">
+      <span className="rotate-90 text-[10px] sm:text-xs tracking-widest text-gray-300 mb-4">
+        Scroll
+      </span>
+      <div className="w-px h-12 bg-gray-400 sm:h-16" />
+    </div>
+  </div>
+</div>
 
     </section>
   );
