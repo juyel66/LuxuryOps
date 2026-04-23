@@ -9,7 +9,7 @@ export default function TheArtEffortLessTravel() {
       
       {/* 🔥 subtle background glow */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-[#D4AF37]/10 to-transparent blur-2xl" />
+        <div className="absolute bottom-0 left-0 w-full h-[300px]" />
       </div>
 
       <section className="container relative z-10 px-4 mx-auto md:py-20 md:py-28">
