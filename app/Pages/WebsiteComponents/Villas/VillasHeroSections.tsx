@@ -75,7 +75,7 @@ export default function VillasHeroSections() {
             </div>
 
             {/* SCROLL INDICATOR */}
-            <div className="flex flex-col items-center gap-3 mt-35">
+            <div className="flex flex-col items-center gap-3 mt-35 animate-[bounce_2s_ease-in-out_infinite]">
               <span className="text-sm tracking-widest rotate-90 text-white/70">
                 Scroll
               </span>
