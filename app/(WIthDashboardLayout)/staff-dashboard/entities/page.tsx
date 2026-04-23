@@ -133,7 +133,7 @@ export default function EntityManagement() {
           <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2">
             <Input label="Commission Rate (%)" />
 
-            <select className="bg-[#0b0b0b] border border-[#1f1f1f] p-3 rounded">
+            <select className="bg-[#0b0b0b] border border-[#1f1f1f] p-3 h-12 mt-5 rounded">
               <option>Active</option>
               <option>Inactive</option>
             </select>
