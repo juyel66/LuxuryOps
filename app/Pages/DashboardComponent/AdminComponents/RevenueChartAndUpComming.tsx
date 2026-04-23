@@ -52,6 +52,8 @@ const bookings = [
 ];
 
 
+
+
 export default function RevenueChartAndUpComming() {
   return (
     <div className="grid grid-cols-1 gap-6 mt-6 xl:grid-cols-3">
@@ -76,6 +78,7 @@ export default function RevenueChartAndUpComming() {
                 }`}
               >
 
+              
                 
                 {item}
               </button>
@@ -105,7 +108,7 @@ export default function RevenueChartAndUpComming() {
                 dataKey="value"
                 fill="#1e3a8a"
                 radius={[6, 6, 0, 0]}
-                barSize={20}
+                barSize={35}
               />
             </BarChart>
           </ResponsiveContainer>

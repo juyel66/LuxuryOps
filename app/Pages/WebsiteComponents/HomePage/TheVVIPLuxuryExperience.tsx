@@ -24,7 +24,7 @@ export default function TheVVIPLuxuryExperience() {
 
           {/* Description */}
           <p className="text-[#9CA3AF] text-sm sm:text-base leading-[1.9] max-w-[500px]">
-            Where luxury is limitless”. Our commitment to excellence and
+            Where luxury is limitless. Our commitment to excellence and
             personalized service has made us the preferred choice for discerning
             clients, ensuring that our brand is synonymous with excellence.
           </p>
