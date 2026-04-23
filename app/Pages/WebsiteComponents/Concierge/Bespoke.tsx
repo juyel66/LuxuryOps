@@ -59,7 +59,7 @@ const services = [
 
 export default function Bespoke() {
   return (
-    <div className="text-white bg-black font-cardo">
+    <div className="text-white bg-[#0A0A0A] font-cardo">
       <section className="container px-4 py-20 mx-auto md:py-24">
         
         {/* Top Label */}
