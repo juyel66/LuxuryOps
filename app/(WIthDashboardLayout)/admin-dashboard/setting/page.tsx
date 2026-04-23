@@ -204,6 +204,16 @@ export default function SettingsTabsPage() {
       />
     </div>
 
+     <div>
+        <label className="text-[13px] text-[#9CA3AF] mb-1 block">
+          VAT
+        </label>
+        <input
+          className="w-full h-[44px] bg-[#0B0F17] border border-[#1A1F2B] rounded-md px-[14px] text-[14px] text-white placeholder:text-[#6B7280] outline-none focus:border-[#C89B3C]"
+          placeholder="20%"
+        />
+      </div>
+
     {/* Button */}
     <div className="pt-2">
       <button className="bg-[#C89B3C] text-white text-[14px] px-5 py-[10px] rounded-md font-medium hover:opacity-90 flex items-center gap-2">
